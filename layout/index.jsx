@@ -5,7 +5,6 @@ const Layout = ({children}) => {
   return (
     <>
     <section  className='font-primary'>
-<Navbar/>
     {children}
     </section>
     </>
