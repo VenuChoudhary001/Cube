@@ -7,19 +7,21 @@ const Hero = () => {
 
   return (
     <>
-      <section className="container p-4 gap-4 grid grid-cols-1 md:grid-cols-2 place-items-center">
-        <Image width={453} height={407} src="/contact/mob.png" />
-        <main className="flex flex-col max-w-[300px] mx-auto items-center justify-center text-center gap-3">
-          <div className="text-lg">Contact us</div>
-          <div className="text-4xl text-dark-300 font-bold">
+      <section className=" p-6 md:p-0  grid grid-cols-1 md:grid-cols-2 place-items-center">
+        <Image width={453} height={407} className='md:hidden' src="/contact/mob.png" />
+        <main className="flex flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
+          <div className="text-lg md:text-base">Contact us</div>
+          <div className="text-4xl md:text-5xl md:mb-2 text-dark-300 font-bold">
             We'd love to hear from you
           </div>
-        </main>
-        <span className="block text-lg text-black/90">
+          <span className="block text-lg md:text-xl text-black/90">
           Send us a message at hello@joincube.co
         </span>
+        </main>
+        <Image width={792} height={548} className='hidden md:block  ' src='/contact/web.png' />
+       
       </section>
-      <section className="container my-16 p-4 flex flex-col items-center justify-center gap-6 ">
+      <section className="max-w-[600px] mx-auto my-16 p-6 flex flex-col items-center justify-center gap-6 ">
         <div className="text-4xl text-dark-300 font-bold">Get in touch</div>
         <span className="block text-lg text-black/90 text-center">
           We’d love to hear from you. Please fill out this form.
@@ -101,25 +103,31 @@ const Hero = () => {
           Send message
         </button>
       </section>
-      <section className="container p-6">
-        <main className="bg-light-50 rounded-[10px] py-8 px-4 flex flex-col gap-6">
-          <div className="text-dark-300 max-w-[280px] text-3xl font-medium">
+      <section className="container  mx-auto p-6">
+        <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[212px]   gap-6">
+          <main className="flex flex-col gap-4">
+
+          <div className="text-dark-300 max-w-[280px] md:max-w-[600px] text-3xl font-medium">
             Join over 12,000+ Cube babes
           </div>
           <div className="text-lg">
             Stay in the loop with everything you need to know.
           </div>
-          <div className="flex flex-col gap-2">
+          </main>
+          <div className="flex flex-col items-start justify-start md:flex-row gap-2">
+            <div className="flex flex-col gap-2">
+
             <input
               type={"email"}
               placeholder="Enter your email"
-              className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
-            />
+              className="outline-none rounded-lg p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+              />
             <span className="block text-light-200 text-sm">
               We care about your data in our privacy policy.
             </span>
+              </div>
 
-            <button className="p-3 bg-black w-full rounded-lg text-white mt-3 h-12">
+            <button className="p-3 bg-black w-full md:w-36 rounded-lg text-white mt-3 md:mt-0 h-12">
               Join
             </button>
           </div>
