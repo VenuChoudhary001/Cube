@@ -1,12 +1,12 @@
 import Image from "next/image";
-
+import Link from "next/link";
 const Navbar = () => {
   return (
     <>
       <main className="hidden  md:flex items-center container px-6 h-[104px] mx-auto justify-between">
         <div className="text-base flex gap-8 items-center">
-          <span className="block ">Mission</span>
-          <span className="block ">Contact</span>
+          <Link to='/mission' className="block ">Mission</Link>
+          <Link to="/contact" className="block ">Contact</Link>
           <span className="block ">Press</span>
         </div>
         <button className="w-[108px] h-10 rounded-full bg-black text-white">
