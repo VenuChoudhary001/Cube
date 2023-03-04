@@ -13,22 +13,25 @@ const Navbar = () => {
           Join beta
         </button>
       </main>
-      <main className=" md:hidden container px-6 h-[100px] flex items-center justify-between">
+      <main className=" md:hidden relative container px-6 h-[100px] flex items-center justify-between">
         <Image 
         src={'/icons/menu.svg'}
         width={22}
         height={22}
         alt=""
         />
+
         <Image 
         src={'/icons/Cube.svg'}
         width={62}
         height={24}
         alt=""
+        className="absolute left-[40%]"
         />
          <button className="w-[88px] h-8 rounded-full bg-black text-white">
           Join beta
         </button>
+       
       </main>
     </>
   );
