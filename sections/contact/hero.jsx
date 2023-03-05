@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className=" p-6 md:p-0  grid grid-cols-1 md:grid-cols-2 place-items-center">
+      <section className=" px-6 mb-[150px] md:p-0  grid grid-cols-1 md:grid-cols-2 place-items-center">
         <Image width={453} height={407} className='md:hidden' src="/contact/mob.png" />
         <main className="flex flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
           <div className="text-lg md:text-base">Contact us</div>

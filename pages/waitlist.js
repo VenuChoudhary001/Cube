@@ -1,11 +1,13 @@
 import Image from "next/image";
-
+import Link from "next/link";
 const Waitlist = () => {
   return (
     <>
       <section className="grid gap-2 grid-cols-1 md:grid-cols-2">
         <main className="container p-6 h-screen flex flex-col justify-between">
+          <Link href={'/mission'}>
           <Image src={"/icons/logo_text.svg"} width={112} height={40} />
+          </Link>
           <div className="lg:max-w-[380px] xl:max-w-[480px] flex flex-col gap-5 md:gap-8 mx-auto">
             <div className="text-4xl font-bold">Apply for early access</div>
             <div className="text-xl text-black/70">

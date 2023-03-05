@@ -1,3 +1,4 @@
+import Footer from "../components/footer";
 import Navbar from "../components/navbar";
 import Hero from "../sections/mission/hero";
 import Section2 from "../sections/mission/section2";
@@ -10,6 +11,7 @@ const Mission = () => {
     <Hero/>
     <Section2/>
     <Section3/>
+    <Footer/>
     </>
   );
 };
