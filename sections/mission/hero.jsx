@@ -4,8 +4,8 @@ const Hero = () => {
   return (
    <>
      <section className="container md:mb-24 mx-auto flex flex-col md:flex-row px-6   items-center gap-4 md:gap-12">
-        <div className=" w-[94vw]  h-[452px] md:hidden relative ">
-          <Image layout="fill" src="/mission/1.png" objectFit="cover" className="rounded-lg" alt=""/>
+        <div className=" w-[90vw] max-w-[350px] h-[452px] md:hidden relative ">
+          <Image layout="fill" src="/mission/1.png" objectFit="contain" className="rounded-lg" alt=""/>
         </div>
         <main className="text-4xl lg:text-5xl xl:text-7xl max-w-[550px] lg:ml-1 flex items-center md:items-start flex-col gap-1 md:gap-4">
           <span className="block">At the</span>
