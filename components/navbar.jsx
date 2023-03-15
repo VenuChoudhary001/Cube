@@ -1,18 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 const Navbar = () => {
   const [show,setShow]=useState(false);
+  const router=useRouter();
+  const [dark,setDark]=useState(false);
   useEffect(()=>{
      if(show){
       document.body.style.overflow="hidden"
      }else{
       document.body.style.overflow="auto"
      }
-  },[show])
+     
+     if(router.pathname=='/') setDark(true);
+     else setDark(true)
+
+  },[show,router.pathname])
+
   return (
     <>
-      <main className="hidden  md:flex items-center container px-6 h-[104px] mx-auto justify-between">
+      <main className={` hidden  md:flex  items-center container px-6 h-[104px] mx-auto justify-between`}>
         <div className="text-base flex gap-8 items-center">
           <Link href='/mission' className="block ">Mission</Link>
           <Link href="/contact" className="block ">Contact</Link>
@@ -38,7 +46,7 @@ const Navbar = () => {
         alt=""
         className="absolute left-[40%]"
         />
-         <Link  href={'/waitlist'} className="w-[88px] flex items-center justify-center text-sm  h-[32px] rounded-full bg-black text-white">
+         <Link  href={'/waitlist'} className={`' ${dark?"bg-white text-black":"bg-black text-white"}  'w-[88px] flex items-center justify-center text-sm  h-[32px] rounded-full' `}>
           Join Beta
         </Link>
        

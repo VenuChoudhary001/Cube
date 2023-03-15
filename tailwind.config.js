@@ -25,6 +25,9 @@ module.exports = {
           300:"#F3F3F5",
           400:"#FFFEFD"
         }
+      },
+      screens:{
+        "2xl":"1440px"
       }
     },
   },
