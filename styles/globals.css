@@ -2,24 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
-    font-family: primary;
-    src: url('../public/fonts/Tiempos-Font/TiemposHeadline-Regular.otf');
+  font-family: primary;
+  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Regular.otf");
 }
-.container{
-    max-width: 100vw;
+.container {
+  max-width: 100vw;
 }
-@media screen and (min-width:768px) {
-  .container{
+@media screen and (min-width: 768px) {
+  .container {
     max-width: 95vw;
   }
 }
-@media screen and (min-width:1500px) {
-  .container{
+@media screen and (min-width: 1500px) {
+  .container {
     max-width: 1440px;
   }
 }
-
-
-
-

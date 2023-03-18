@@ -27,7 +27,9 @@ module.exports = {
         }
       },
       screens:{
-        "2xl":"1440px"
+        "2xl":"1440px",
+        "3xl":"1540px",
+        "4xl":"1720px"
       }
     },
   },

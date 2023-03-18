@@ -14,19 +14,19 @@ const Navbar = () => {
      }
      
      if(router.pathname=='/') setDark(true);
-     else setDark(true)
+     else setDark(false)
 
   },[show,router.pathname])
 
   return (
     <>
-      <main className={` hidden  md:flex  items-center container px-6 h-[104px] mx-auto justify-between`}>
+      <main className={`${dark && "text-white"} hidden  md:flex  items-center container px-6 h-[104px] mx-auto justify-between`}>
         <div className="text-base flex gap-8 items-center">
           <Link href='/mission' className="block ">Mission</Link>
           <Link href="/contact" className="block ">Contact</Link>
           <span className="block ">Press</span>
         </div>
-        <Link href={'/waitlist'} className="w-[108px] flex items-center justify-center h-10 rounded-full bg-black text-white">
+        <Link href={'/waitlist'} className={`${dark?"bg-white text-black":"bg-black text-white"} w-[108px] flex items-center justify-center h-10 rounded-full `}>
           Join beta
         </Link>
       </main>
@@ -46,7 +46,7 @@ const Navbar = () => {
         alt=""
         className="absolute left-[40%]"
         />
-         <Link  href={'/waitlist'} className={`' ${dark?"bg-white text-black":"bg-black text-white"}  'w-[88px] flex items-center justify-center text-sm  h-[32px] rounded-full' `}>
+         <Link  href={'/waitlist'} className={`  ${dark?"bg-white text-black":"bg-black text-white"}  w-[88px] flex items-center justify-center text-sm  h-[32px] rounded-full `}>
           Join Beta
         </Link>
        
