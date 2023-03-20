@@ -8,18 +8,27 @@ const Hero = () => {
   return (
     <>
       <section className=" px-6 mb-[150px] md:p-0  grid grid-cols-1 md:grid-cols-2 place-items-center">
-        <Image width={453} height={407} className='md:hidden' src="/contact/mob.png" />
+        <Image
+          width={453}
+          height={407}
+          className="md:hidden"
+          src="/contact/mob.png"
+        />
         <main className="flex flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
           <div className="text-lg md:text-base">Contact us</div>
           <div className="text-4xl md:text-5xl md:mb-2 text-dark-300 font-bold">
             We'd love to hear from you
           </div>
           <span className="block text-lg md:text-xl text-black/90">
-          Send us a message at hello@joincube.co
-        </span>
+            Send us a message at hello@joincube.co
+          </span>
         </main>
-        <Image width={792} height={548} className='hidden md:block  ' src='/contact/web.png' />
-       
+        <Image
+          width={792}
+          height={548}
+          className="hidden md:block  "
+          src="/contact/web.png"
+        />
       </section>
       <section className="max-w-[600px] mx-auto my-16 p-6 flex flex-col items-center justify-center gap-6 ">
         <div className="text-4xl text-dark-300 font-bold">Get in touch</div>
@@ -103,29 +112,27 @@ const Hero = () => {
           Send message
         </button>
       </section>
-      <section className="container  mx-auto p-6">
+      <section className="container  mx-auto p-6 mb-12">
         <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[212px]   gap-6">
           <main className="flex flex-col gap-4">
-
-          <div className="text-dark-300 max-w-[280px] md:max-w-[600px] text-3xl font-medium">
-            Join over 12,000+ Cube babes
-          </div>
-          <div className="text-lg">
-            Stay in the loop with everything you need to know.
-          </div>
+            <div className="text-dark-300 max-w-[280px] md:max-w-[600px] text-3xl font-medium">
+              Join over 12,000+ Cube babes
+            </div>
+            <div className="text-lg">
+              Stay in the loop with everything you need to know.
+            </div>
           </main>
           <div className="flex flex-col items-start justify-start md:flex-row gap-2">
             <div className="flex flex-col gap-2">
-
-            <input
-              type={"email"}
-              placeholder="Enter your email"
-              className="outline-none rounded-lg p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+              <input
+                type={"email"}
+                placeholder="Enter your email"
+                className="outline-none rounded-lg p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
               />
-            <span className="block text-light-200 text-sm">
-              We care about your data in our privacy policy.
-            </span>
-              </div>
+              <span className="block text-light-200 text-sm">
+                We care about your data in our privacy policy.
+              </span>
+            </div>
 
             <button className="p-3 bg-black w-full md:w-36 rounded-lg text-white mt-3 md:mt-0 h-12">
               Join

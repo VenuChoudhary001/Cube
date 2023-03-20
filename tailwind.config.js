@@ -5,33 +5,34 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
     "./layout/*.{js,ts,jsx,tsx}",
-    "./sections/**/*.{js,jsx,ts,tsx}"
+    "./sections/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
-      fontFamily:{
-        primary:['primary','sans-serif']
+      fontFamily: {
+        primary: ["primary", "sans-serif"],
       },
-      colors:{
-        dark:{
-          100:"#1B1B1B",
-          200:"#101010",
-          300:"#101828"
+      colors: {
+        dark: {
+          100: "#1B1B1B",
+          200: "#101010",
+          300: "#101828",
         },
-        light:{
-          50:"#F9FAFB",
-          100:"#D0D5DD",
-          200:"#667085",
-          300:"#F3F3F5",
-          400:"#FFFEFD"
-        }
+        light: {
+          50: "#F9FAFB",
+          100: "#D0D5DD",
+          200: "#667085",
+          300: "#F3F3F5",
+          400: "#FFFEFD",
+        },
       },
-      screens:{
-        "2xl":"1440px",
-        "3xl":"1540px",
-        "4xl":"1720px"
-      }
+      screens: {
+        "2xl": "1440px",
+        "3xl": "1540px",
+        "4xl": "1720px",
+        "5xl": "1920px",
+      },
     },
   },
   plugins: [],
-}
+};

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/navbar";
 import { Power3, gsap } from "gsap";
 const Hero = () => {
@@ -8,7 +8,9 @@ const Hero = () => {
   let t2 = gsap.timeline();
   let t3 = gsap.timeline();
   let t4 = gsap.timeline();
-  useEffect(() => {
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const animate = () => {
     tl.to(
       root.current.children[1],
       { css: { y: -55, opacity: 0, display: "none" } },
@@ -39,11 +41,28 @@ const Hero = () => {
     ).to(root.current.children[3], {
       css: { x: 0, opacity: 1, display: "block" },
     });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        console.log(entries);
+        let [entry] = entries;
+        if (entry.isIntersecting) animate();
+        setIsVisible(entry.isIntersecting);
+      },
+      { root: null, threshold: 0.5 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    if (isVisible) observer.unobserve(containerRef.current);
   }, []);
 
   return (
     <>
-      <section className="relative overflow-x-hidden w-full h-[800px] md:h-[974px]">
+      <section
+        ref={containerRef}
+        className="relative overflow-x-hidden w-full h-[800px] md:h-[974px]"
+      >
         <Image
           src={"/home/1.png"}
           layout="fill"
@@ -66,16 +85,16 @@ const Hero = () => {
             alt=""
             className="w-[200px] mt-[120px] md:mt-16 md:mt-[50px] -mr-[50px] h-[350px] md:w-[300px] scale-110 3xl:-mr-16  ml-auto md:h-[480px] object-contain lg:mr-[50px] xl:mr-0"
           />
-          <div className="mt-[100px] md:mt-0 flex relative justify-between">
+          <div className="mt-[100px] 5xl:mb-[80px] md:mt-0 flex relative justify-between">
             <img
               src="/home/3.svg"
               alt=""
-              className=" w-[175px] -ml-[39px] -rotate-[29deg] hidden -mt-[50px] h-[164px] md:w-[248px] 2xl:w-[280px] 4xl:w-[320px]  md:h-[240px] 2xl:h-[280px]  2xl:-mt-[45px]  md:-mt-[25px]  4xl:-ml-[23px] 4xl:-mt-[55px] md:ml-[70px] 2xl:ml-[37px] md:rotate-[10deg] 2xl:rotate-[1deg] "
+              className=" w-[175px] -ml-[39px] -rotate-[29deg] hidden -mt-[50px] h-[164px] md:w-[248px] 2xl:w-[280px] 4xl:w-[320px] 5xl:-ml-16 5xl:-mt-[85px]  md:h-[240px] 2xl:h-[280px]  2xl:-mt-[45px]  md:-mt-[25px]  4xl:-ml-[23px] 4xl:-mt-[55px] md:ml-[70px] 2xl:ml-[37px] md:rotate-[10deg] 2xl:rotate-[1deg] "
             />
             <img
               src="/home/4.svg"
               alt=""
-              className="w-[170px] -rotate-[3deg] hidden -mr-[25px] h-[164px] md:w-[240px] md:hidden 2xl:w-[250px] 4xl:w-[280px] 4xl:mr-[10px]  md:h-[240px] 2xl:h-[280px] md:mt-[50px] 2xl:mt-[30px] md:rotate-[20deg] md:mr-[53px]  2xl:mr-[52px] 2xl:rotate-[18deg] "
+              className="w-[170px] -rotate-[3deg] hidden -mr-[25px] h-[164px] md:w-[240px] md:hidden 2xl:w-[250px] 4xl:w-[280px] 5xl:w-[290px] 5xl:-mr-[45px] 5xl:mt-[7px] 4xl:mr-[10px]  md:h-[240px] 2xl:h-[280px] md:mt-[50px] 2xl:mt-[30px] md:rotate-[20deg] md:mr-[53px]  2xl:mr-[52px] 2xl:rotate-[18deg] "
             />
           </div>
           <div className="text-2xl md:text-7xl  font-bold min-h-[350px] flex flex-col items-center justify-center text-center text-white">
