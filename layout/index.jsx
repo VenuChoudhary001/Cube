@@ -1,14 +1,11 @@
-import React from 'react'
-import Navbar from '../components/navbar'
+import React from "react";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <>
-    <section  className='font-primary'>
-    {children}
-    </section>
+      <section className="font-primary200">{children}</section>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

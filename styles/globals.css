@@ -7,9 +7,26 @@ body {
 }
 
 @font-face {
-  font-family: primary;
+  font-family: Primary;
   src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Regular.otf");
 }
+@font-face {
+  font-family: TemposMedium;
+  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Medium.otf");
+}
+@font-face {
+  font-family: TemposSemibold;
+  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Semibold.otf");
+}
+@font-face {
+  font-family: TemposBold;
+  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Bold.otf");
+}
+@font-face {
+  font-family: TemposLight;
+  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Light.otf");
+}
+
 .container {
   max-width: 100vw;
 }

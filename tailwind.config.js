@@ -10,13 +10,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["primary", "sans-serif"],
+        primary: "Primary",
+        primary100: "TemposLight",
+        primary200: "Primary",
+        primary300: "TemposMedium",
+        primary400: "TemposSemibold",
+        primary500: "TemposBold",
       },
       colors: {
         dark: {
           100: "#1B1B1B",
           200: "#101010",
           300: "#101828",
+          400: "#1F2F49",
+          500: "#181513",
         },
         light: {
           50: "#F9FAFB",
@@ -27,6 +34,7 @@ module.exports = {
         },
       },
       screens: {
+        sm: "428px",
         "2xl": "1440px",
         "3xl": "1540px",
         "4xl": "1720px",

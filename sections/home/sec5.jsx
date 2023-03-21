@@ -96,7 +96,6 @@ const Sec5 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         let [entry] = entries;
         if (entry.isIntersecting) animate();
         setIsVisible(entry.isIntersecting);
@@ -115,14 +114,16 @@ const Sec5 = () => {
       >
         <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-2 place-items-center">
           <article className=" hidden md:flex ml-[2vw] flex-col gap-6">
-            <main className="text-5xl font-semibold">Seize the moment</main>
-            <main className="text-xl">
+            <main className="text-5xl font-primary400 font-semibol">
+              Seize the moment
+            </main>
+            <main className="text-xl font-primary200 text-dark-400 max-w-[600px]">
               Strike while the ice is cold: our 24-hour rule for meaningful
               connections. Otherwise it disappears and you prepare the next
               arrow.
             </main>
             <div>
-              <button className="outline-none rounded-full w-[163px] h-[48px] bg-black text-white">
+              <button className="outline-none font-primary300 rounded-full w-[163px] h-[48px] bg-black text-white">
                 Join Beta
               </button>
             </div>
@@ -144,7 +145,7 @@ const Sec5 = () => {
                 height={240}
               />
             </main>
-            <main className="flex items-start gap-2">
+            <main className="flex justify-center items-start gap-2">
               <Image
                 ref={image3}
                 src={"/home/group1/3.png"}
@@ -168,15 +169,17 @@ const Sec5 = () => {
               />
             </main>
           </article>
-          <article className=" flex px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
-            <main className="text-4xl font-semibold">Seize the moment</main>
-            <main className="text-xl">
+          <article className=" flex text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
+            <main className="text-4xl  font-primary300 font-semibold">
+              Seize the moment
+            </main>
+            <main className="text-xl  font-primary200">
               Strike while the ice is cold: our 24-hour rule for meaningful
               connections. Otherwise it disappears and you prepare the next
               arrow.
             </main>
             <div>
-              <button className="outline-none rounded-full w-[163px] h-[48px] bg-black text-white">
+              <button className="outline-none text-base font-primary300 rounded-full w-[163px] h-[48px] bg-black text-white">
                 Join Beta
               </button>
             </div>

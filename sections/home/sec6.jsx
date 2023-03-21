@@ -15,7 +15,6 @@ const Sec6 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         let [entry] = entries;
         if (entry.isIntersecting) animate();
         setIsVisible(entry.isIntersecting);
@@ -39,8 +38,10 @@ const Sec6 = () => {
           className={"scale-[0.2]"}
           height={251}
         />
-        <div className="text-3xl md:text-5xl">Ready to break the ice?</div>
-        <button className="outline-none rounded-full w-[163px] h-[48px] bg-black text-white">
+        <div className="text-3xl max-w-[300px] text-center md:max-w-[500px] font-primary300 md:text-5xl">
+          Ready to break the ice?
+        </div>
+        <button className="outline-none font-primary300 text-base rounded-full w-[163px] h-[48px] bg-black text-white">
           Join Beta
         </button>
       </section>

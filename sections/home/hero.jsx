@@ -46,7 +46,6 @@ const Hero = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         let [entry] = entries;
         if (entry.isIntersecting) animate();
         setIsVisible(entry.isIntersecting);
@@ -61,7 +60,7 @@ const Hero = () => {
     <>
       <section
         ref={containerRef}
-        className="relative overflow-x-hidden w-full h-[800px] md:h-[974px]"
+        className="relative font-primary-400 overflow-hidden w-full h-[800px] md:h-[974px]"
       >
         <Image
           src={"/home/1.png"}
@@ -77,7 +76,7 @@ const Hero = () => {
         />
         <Navbar />
         <main ref={root} className="max-w-[800px] mx-auto flex flex-col gap-5">
-          <div className="hidden md:block text-6xl max-w-[280px] text-center mx-auto text-white font-bol">
+          <div className="hidden mt-8 md:block text-6xl font-primary300 max-w-[250px] text-center mx-auto text-white font-bol">
             Let's get real
           </div>
           <img
@@ -85,7 +84,7 @@ const Hero = () => {
             alt=""
             className="w-[200px] mt-[120px] md:mt-16 md:mt-[50px] -mr-[50px] h-[350px] md:w-[300px] scale-110 3xl:-mr-16  ml-auto md:h-[480px] object-contain lg:mr-[50px] xl:mr-0"
           />
-          <div className="mt-[100px] 5xl:mb-[80px] md:mt-0 flex relative justify-between">
+          <div className="mt-[100px] mb-[50px] lg:mb-[100px] md:-mt-[28px] flex relative justify-between">
             <img
               src="/home/3.svg"
               alt=""
@@ -97,17 +96,29 @@ const Hero = () => {
               className="w-[170px] -rotate-[3deg] hidden -mr-[25px] h-[164px] md:w-[240px] md:hidden 2xl:w-[250px] 4xl:w-[280px] 5xl:w-[290px] 5xl:-mr-[45px] 5xl:mt-[7px] 4xl:mr-[10px]  md:h-[240px] 2xl:h-[280px] md:mt-[50px] 2xl:mt-[30px] md:rotate-[20deg] md:mr-[53px]  2xl:mr-[52px] 2xl:rotate-[18deg] "
             />
           </div>
-          <div className="text-2xl md:text-7xl  font-bold min-h-[350px] flex flex-col items-center justify-center text-center text-white">
+          <div className="text-5xl max-w-[320px] mx-auto md:max-w-[700px] hidden md:text-7xl  font-primary300 min-h-[350px] flex flex-col items-center justify-center text-center text-white">
             You’ve matched!
-            <div className="text-sm md:text-xl font-normal">
+            <div className="text-sm my-2 max-w-[250px] mx-auto md:max-w-[700px] md:text-xl font-normal">
               You and Jessica have common interests.
             </div>
           </div>
         </main>
         <main className="absolute bottom-[150px] ml-[25px] md:ml-[50px] flex flex-col gap-6">
-          <img src="/icons/insta_white.svg" alt="" className="" />
-          <img src="/icons/fb_white.svg" alt="" className="" />
-          <img src="/icons/twitter_white.svg" alt="" className="" />
+          <img
+            src="/icons/insta_white.svg"
+            alt=""
+            className="w-[32px]  cursor-pointer "
+          />
+          <img
+            src="/icons/fb_white.svg"
+            alt=""
+            className="w-[32px]  cursor-pointer "
+          />
+          <img
+            src="/icons/twitter_white.svg"
+            alt=""
+            className="w-[32px]  cursor-pointer "
+          />
         </main>
       </section>
     </>

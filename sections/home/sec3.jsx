@@ -23,6 +23,7 @@ const Sec3 = () => {
       boyImg.current,
       {
         x: -750,
+        scale: 0,
         display: "block",
         rotate: "30deg",
         ease: Power3.easeInOut,
@@ -31,9 +32,11 @@ const Sec3 = () => {
       "start"
     ).to(boyImg.current, {
       x: 0,
+      scale: 1,
       display: "block",
       ease: Power3.easeInOut,
     });
+
     t2.from(
       girlImg.current,
       {
@@ -95,7 +98,6 @@ const Sec3 = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries);
         let [entry] = entries;
         if (entry.isIntersecting) animate();
         setIsVisible(entry.isIntersecting);
@@ -110,85 +112,70 @@ const Sec3 = () => {
     <>
       <section
         ref={containerRef}
-        className="relative container min-h-[1024px] justify-center mx-auto flex flex-col gap-8"
+        className="relative overflow-x-hidden overflow-y-hidden container min-h-[720px] md:min-h-[1024px] justify-center mx-auto flex flex-col gap-8"
       >
-        <div className="text-5xl font-semibol text-center">
+        <div className="text-3xl lg:text-5xl text-dark-500 font-primary300 text-center">
           Spark new connections through videos
         </div>
-        <div className="text-2xl text-center max-w-[500px] mx-auto">
+        <div className="text-xl text-dark-400 font-primary200 text-center max-w-[500px] mx-auto">
           Create or upload short videos that highlight your
           personality and interests
         </div>
-        <article className="relative lg:max-w-[900px] xl:max-w-[1100px] mx-auto flex gap-6 bg-light-300 min-h-[389px] rounded-[48px] w-full -z-10">
-          <Image
+        <article className="relative mx-auto  max-w-[85vw] lg:max-w-[900px] xl:max-w-[1100px] mx-auto flex gap-6 bg-light-300 min-h-[250px] md:min-h-[389px] rounded-[15px] md:rounded-[48px] w-full -z-10">
+          <img
             src={"/home/sec3/3.png"}
-            className="absolute hidden top-16 -ml-10"
-            width={72}
-            height={72}
+            className="absolute w-12 h-12 lg:w-[60px] lg:h-[60px] hidden top-[12px] -ml-[25px] md:top-16 md:-ml-10"
+            width={60}
+            height={60}
+            objectFit="contain"
             ref={img1}
           />
-          <Image
+          <img
             src={"/home/sec3/pop.png"}
-            className="absolute hidden top-16 left-[45%] rounded-full shadow-2xl"
-            width={72}
-            height={72}
+            className="absolute hidden w-0 lg:w-[72px] lg:h-[72px] object-contain top-16 left-[45%] rounded-full shadow-2xl"
             ref={img4}
           />
-          <Image
+          <img
             src={"/home/sec3/4.png"}
-            className="absolute hidden bottom-[100px] z-[999] -ml-24 xl:-ml-10"
-            width={255}
-            height={64}
-            objectFit="contain"
+            className="absolute hidden w-[250px] top-24  -ml-24 h-[104px] lg:w-[285px] lg:h-[124px] object-contain  lg:bottom-[100px] z-[999] lg:-ml-24 xl:-ml-10"
             ref={img2}
           />
-          <Image
+          <img
             src={"/home/sec3/5.png"}
-            className="absolute hidden bottom-0 -left-2 shadow-2xl rounded-full"
-            width={60}
-            height={60}
+            className="absolute w-[38px] md:w-[60px] hidden bottom-6 -ml-[25px] md:bottom-0 md:-left-2 shadow-2xl rounded-full"
             ref={img3}
+            objectFit="contain"
           />
-          <Image
+          <img
             src={"/home/sec3/6.png"}
-            className="absolute hidden -bottom-[150px] left-[30%] z-[999]"
-            width={255}
-            height={74}
+            className="absolute w-[180px] lg:w-[250px] lg:ml-20  object-contain hidden -bottom-[150px] left-[30%] z-[999]"
             ref={img5}
+            objectFit="contain"
           />
-          <Image
+          <img
             src={"/home/sec3/7.png"}
-            className="absolute hidden bottom-[0px] shadow-2xl rounded-full -right-[10px]"
-            width={60}
-            height={60}
+            className="absolute hidden w-12 lg:w-[60px] object-contain bottom-[200px] md:bottom-[0px] shadow-2xl rounded-full -right-[10px]"
             ref={img6}
+            objectFit="contain"
           />
-          <Image
+          <img
             src={"/home/sec3/8.png"}
-            className="absolute hidden top-[150px] -right-20 z-[999]"
-            width={285}
-            height={64}
+            className="absolute w-[150px] h-[104px] lg:h-[154px] lg:mr-[55px] object-contain hidden top-[150px] -right-20 z-[999]"
             ref={img7}
           />
-          <Image
+          <img
             src={"/home/sec3/9.png"}
-            className="absolute hidden top-[50px] -right-5 shadow-2xl rounded-full z-[999]"
-            width={60}
-            height={60}
+            className="absolute hidden w-0 lg:w-[60px] lg:h-[60px] top-[50px] -right-5 shadow-2xl rounded-full z-[999]"
             ref={img8}
           />
-          <Image
+          <img
             src={"/home/sec3/1.png"}
-            className="absolute top-10 left-[2%] hidden   xl:left-[12%]"
-            width={388}
-            height={581}
+            className="absolute hidden object-contain w-[200px] lg:w-[328px] xl:w-[388px] xl:h-[581px] top-10  -left-[10%] sm:left-[4%] lg:left-[10%] xl:left-[6%] hidden   xl:left-[12%]"
             ref={boyImg}
           />
-          <Image
+          <img
             src={"/home/sec3/2.png"}
-            className="absolute top-10 hidden right-[12%]"
-            width={388}
-            height={581}
+            className="absolute hidden object-contain w-[200px] lg:w-[328px] xl:w-[388px] xl:h-[581px] top-10 hidden -right-[4%] sm:right-[3%] lg:right-[16%] xl:right-[12%]"
             ref={girlImg}
           />
         </article>
