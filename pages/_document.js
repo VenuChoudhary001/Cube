@@ -8,9 +8,9 @@ export default function Document() {
           href="https://unpkg.com/cloudinary-video-player@1.9.5/dist/cld-video-player.min.css"
           rel="stylesheet"
         />
-        <Script
+        <script
+          async
           src="https://unpkg.com/cloudinary-video-player@1.9.5/dist/cld-video-player.min.js"
-          type="text/javascript"
         />
       </Head>
       <body>

@@ -4,12 +4,14 @@ const VideoPlayer = () => {
   const videoRef = useRef(null);
   useEffect(() => {
     if (cloudinaryRef.current) return;
-    cloudinaryRef.current = window.cloudinary;
-    cloudinaryRef.current.videoPlayer(videoRef.current, {
-      cloud_name: "dtwhf1fv8",
-      loop: true,
-      autoplayMode: "on-scroll",
-    });
+    else {
+      cloudinaryRef.current = window.cloudinary;
+      cloudinaryRef.current.videoPlayer(videoRef.current, {
+        cloud_name: "dtwhf1fv8",
+        loop: true,
+        autoplayMode: "on-scroll",
+      });
+    }
   }, []);
   return (
     <video

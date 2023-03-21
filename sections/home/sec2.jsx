@@ -1,5 +1,5 @@
 import React from "react";
-import VideoPlayer from "../../components/videoPlayer";
+// import VideoPlayer from "../../components/videoPlayer";
 
 const Sec2 = () => {
   return (
@@ -13,9 +13,9 @@ const Sec2 = () => {
           that values honesty and transparency
         </main>
       </section>
-      <div className="relative w-full h-[60vh] lg:h-[820px] xl:h-[1150px] ">
+      {/* <div className="relative w-full h-[60vh] lg:h-[820px] xl:h-[1150px] ">
         <VideoPlayer />
-      </div>
+      </div> */}
     </>
   );
 };

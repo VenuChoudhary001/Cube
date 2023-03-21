@@ -10,6 +10,9 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.13",
+    "cloudinary": "^1.35.0",
+    "cloudinary-core": "^2.13.0",
+    "cloudinary-video-player": "^1.9.8",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "gsap": "^3.11.4",
