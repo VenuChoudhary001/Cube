@@ -17,7 +17,7 @@ const Sec3 = () => {
   const t0 = gsap.timeline();
   const t1 = gsap.timeline();
   const t2 = gsap.timeline();
-
+  const t3 = gsap.timeline();
   const animate = () => {
     t0.from(
       boyImg.current,
@@ -82,13 +82,13 @@ const Sec3 = () => {
       }
     );
 
-    t0.from(
+    t3.from(
       [img2.current, img7.current, img5.current],
       {
         scale: 0,
         display: "block",
       },
-      0.1
+      "start+=0.2"
     ).to([img2.current, img7.current, img5.current], {
       scale: 1,
       display: "block",
