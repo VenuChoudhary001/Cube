@@ -12,85 +12,85 @@ const Sec5 = () => {
   let t0 = gsap.timeline();
 
   const animate = () => {
-    t0.from(
-      image1.current,
-      {
-        scale: 0,
-        x: 0,
-        y: 0,
-      },
-      0.1
-    )
-      .to(
-        image1.current,
-        {
-          y: 0,
-          x: 0,
-          scale: 1,
-          display: "block",
-          borderRadius: "10px",
-        },
-        0.1
-      )
-      .from(
-        image2.current,
-        {
-          y: 0,
-          x: 0,
-          display: "block",
-          scale: 1.2,
-        },
-        0.1
-      )
-      .to(
-        image2.current,
-        {
-          y: 0,
-          x: 0,
-          scale: 1,
-          borderRadius: "10px",
-          display: "block",
-        },
-        0.1
-      )
-      .from(
-        image4.current,
-        {
-          y: 155,
-          x: 0,
-          opacity: 0,
-          display: "block",
-        },
-        0.1
-      )
-      .to(
-        image4.current,
-        {
-          y: 0,
-          x: 0,
-          opacity: 1,
-          borderRadius: "10px",
-          display: "block",
-        },
-        0.1
-      )
-      .from(
-        [image5.current, image3.current],
-        {
-          y: 0,
-          x: 0,
-          display: "block",
-          scale: 0.5,
-        },
-        0.1
-      )
-      .to([image5.current, image3.current], {
-        y: 0,
-        x: 0,
-        scale: 1,
-        borderRadius: "10px",
-        display: "block",
-      });
+    // t0.from(
+    //   image1.current,
+    //   {
+    //     scale: 0,
+    //     x: 0,
+    //     y: 0,
+    //   },
+    //   0.1
+    // )
+    //   .to(
+    //     image1.current,
+    //     {
+    //       y: 0,
+    //       x: 0,
+    //       scale: 1,
+    //       display: "block",
+    //       borderRadius: "10px",
+    //     },
+    //     0.1
+    //   )
+    //   .from(
+    //     image2.current,
+    //     {
+    //       y: 0,
+    //       x: 0,
+    //       display: "block",
+    //       scale: 1.2,
+    //     },
+    //     0.1
+    //   )
+    //   .to(
+    //     image2.current,
+    //     {
+    //       y: 0,
+    //       x: 0,
+    //       scale: 1,
+    //       borderRadius: "10px",
+    //       display: "block",
+    //     },
+    //     0.1
+    //   )
+    //   .from(
+    //     image4.current,
+    //     {
+    //       y: 155,
+    //       x: 0,
+    //       opacity: 0,
+    //       display: "block",
+    //     },
+    //     0.1
+    //   )
+    //   .to(
+    //     image4.current,
+    //     {
+    //       y: 0,
+    //       x: 0,
+    //       opacity: 1,
+    //       borderRadius: "10px",
+    //       display: "block",
+    //     },
+    //     0.1
+    //   )
+    //   .from(
+    //     [image5.current, image3.current],
+    //     {
+    //       y: 0,
+    //       x: 0,
+    //       display: "block",
+    //       scale: 0.5,
+    //     },
+    //     0.1
+    //   )
+    //   .to([image5.current, image3.current], {
+    //     y: 0,
+    //     x: 0,
+    //     scale: 1,
+    //     borderRadius: "10px",
+    //     display: "block",
+    //   });
   };
 
   useEffect(() => {
@@ -110,7 +110,7 @@ const Sec5 = () => {
     <>
       <section
         ref={containerRef}
-        className="bg-light-50 overflow-x-hidden my-[150px] md:my-0"
+        className="bg-light-50 overflow-x-hidden pt-12 md:py-0 my-[150px] md:my-0"
       >
         <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-2 place-items-center">
           <article className=" hidden md:flex ml-[2vw] flex-col gap-6">
@@ -133,14 +133,14 @@ const Sec5 = () => {
               <Image
                 ref={image1}
                 src={"/home/group1/1.png"}
-                className={"rounded hidden"}
+                className={"rounded "}
                 width={160}
                 height={160}
               />
               <Image
                 ref={image2}
                 src={"/home/group1/2.png"}
-                className={"rounded hidden"}
+                className={"rounded "}
                 width={160}
                 height={240}
               />
@@ -149,27 +149,27 @@ const Sec5 = () => {
               <Image
                 ref={image3}
                 src={"/home/group1/3.png"}
-                className={"rounded hidden "}
+                className={"rounded  "}
                 width={192}
                 height={128}
               />
               <Image
                 ref={image4}
                 src={"/home/group1/4.png"}
-                className={"rounded hidden"}
+                className={"rounded "}
                 width={160}
                 height={240}
               />
               <Image
                 ref={image5}
                 src={"/home/group1/5.png"}
-                className={"rounded hidden"}
+                className={"rounded "}
                 width={192}
                 height={128}
               />
             </main>
           </article>
-          <article className=" flex text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
+          <article className=" flex text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
             <main className="text-4xl  font-primary300 font-semibold">
               Seize the moment
             </main>
