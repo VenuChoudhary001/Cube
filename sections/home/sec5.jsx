@@ -59,7 +59,6 @@ const Sec5 = () => {
           y: 155,
           x: 0,
           display: "block",
-          scale: 1.2,
         },
         0.1
       )
@@ -68,7 +67,6 @@ const Sec5 = () => {
         {
           y: 0,
           x: 0,
-          scale: 1,
           borderRadius: "10px",
           display: "block",
         },

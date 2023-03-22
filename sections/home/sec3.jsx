@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3, Power4 } from "gsap";
 const Sec3 = () => {
