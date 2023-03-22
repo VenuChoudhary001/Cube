@@ -35,8 +35,8 @@ const Sec5 = () => {
       .from(
         image2.current,
         {
-          y: -155,
-          x: 1280,
+          y: 0,
+          x: 0,
           display: "block",
           scale: 1.2,
         },
@@ -58,6 +58,7 @@ const Sec5 = () => {
         {
           y: 155,
           x: 0,
+          opacity: 0,
           display: "block",
         },
         0.1
@@ -67,6 +68,7 @@ const Sec5 = () => {
         {
           y: 0,
           x: 0,
+          opacity: 1,
           borderRadius: "10px",
           display: "block",
         },
@@ -78,7 +80,7 @@ const Sec5 = () => {
           y: 0,
           x: 0,
           display: "block",
-          scale: 1.5,
+          scale: 0.5,
         },
         0.1
       )
