@@ -20,24 +20,24 @@ const Hero = () => {
 
     t2.from(
       root.current.children[2].children[0],
-      { css: { x: -1050, opacity: 1, display: "none" } },
+      { css: { x: -1050, display: "block" } },
       "start+=1.2"
     ).to(root.current.children[2].children[0], {
-      css: { x: 0, opacity: 1, display: "block" },
+      css: { x: 0, display: "block" },
     });
 
     t3.from(
       root.current.children[2].children[1],
-      { css: { x: 1050, opacity: 1, display: "none" } },
+      { css: { x: 1050, display: "block" } },
       "start+=1.2"
     ).to(root.current.children[2].children[1], {
-      css: { x: 0, opacity: 1, display: "block" },
+      css: { x: 0, display: "block" },
     });
 
     t4.from(
       root.current.children[3],
-      { css: { x: -1250, display: "none" } },
-      "start+=1.2"
+      { css: { x: -1250, display: "block" }, delay: 0.2 },
+      "start+=1"
     ).to(root.current.children[3], {
       css: { x: 0, opacity: 1, display: "block" },
     });
