@@ -170,7 +170,7 @@ const Sec5 = () => {
               />
             </main>
           </article>
-          <article className=" flex text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
+          <article className=" flex items-center text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
             <main className="text-4xl  font-primary300 font-semibold">
               Seize the moment
             </main>
