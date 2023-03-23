@@ -35,7 +35,7 @@ const Section3 = () => {
                 work.
               </span>
               <Link
-                href={"/contact"}
+                href={"/joinus"}
                 className="bg-white font-primary400 mt-4 md:mt-0 w-[133px] md:w-[163px] text-black flex text-sm md:text-base items-center justify-center rounded-full h-10 md:h-12"
               >
                 {" "}

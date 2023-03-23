@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Footer = () => {
+  const router = useRouter();
+
+  const handleClick = (to) => {
+    router.push(`/${to}`);
+  };
+
   return (
     <>
       <main className="bg-dark-200 flex font-primary200 flex-col justify-center gap-16 items-center h-[578px] md:h-[430px]">
@@ -9,8 +16,9 @@ const Footer = () => {
             alt=""
             width={112}
             height={40}
-            className="col-span-2 md:col-span-1"
+            className="col-span-2 md:col-span-1 cursor-pointer"
             src="/icons/logo_white.svg"
+            onClick={() => handleClick("")}
           />
           <main className="flex flex-col gap-4">
             <div className="text-light-400   text-sm md:text-base">Company</div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3 } from "gsap";
+import Link from "next/link";
 const Sec6 = () => {
   let imgRef = useRef(null);
   let tl = gsap.timeline();
@@ -41,9 +42,14 @@ const Sec6 = () => {
         <div className="text-3xl max-w-[300px] text-center md:max-w-[500px] font-primary300 md:text-5xl">
           Ready to break the ice?
         </div>
-        <button className="outline-none font-primary300 text-base rounded-full w-[163px] h-[48px] bg-black text-white">
-          Join Beta
-        </button>
+        <Link
+          href={"/waitlist"}
+          className="outline-none flex flex-col items-center justfiy-center font-primary300 text-base rounded-full w-[163px] h-[48px] bg-black text-white"
+        >
+          <span className="block w-full h-full flex items-center justify-center">
+            Join Beta
+          </span>
+        </Link>
       </section>
     </>
   );

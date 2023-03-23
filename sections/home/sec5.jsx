@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 const Sec5 = () => {
   const image1 = useRef(null);
   const image2 = useRef(null);
@@ -179,9 +180,14 @@ const Sec5 = () => {
               arrow.
             </main>
             <div>
-              <button className="outline-none text-base font-primary300 rounded-full w-[163px] h-[48px] bg-black text-white">
-                Join Beta
-              </button>
+              <Link
+                href={"/waitlist"}
+                className="outline-none flex flex-col items-center justfiy-center font-primary300 text-base rounded-full w-[163px] h-[48px] bg-black text-white"
+              >
+                <span className="block w-full h-full flex items-center justify-center">
+                  Join Beta
+                </span>
+              </Link>
             </div>
           </article>
         </section>
