@@ -33,7 +33,7 @@ const Hero = () => {
           <div className="hidden md:block lg:w-[150px] lg:h-[460px] xl:w-[156px] xl:h-[590px] relative ">
             <Image
               layout="fill"
-              className="object-co"
+              className="object-co rounded-2xl"
               alt=""
               src="/mission/3.png"
             />
