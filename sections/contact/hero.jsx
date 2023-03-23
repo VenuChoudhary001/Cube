@@ -94,8 +94,8 @@ const Hero = () => {
       <section className="container  mx-auto p-6 mb-12">
         <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[212px]   gap-6">
           <main className="flex flex-col gap-4">
-            <div className="text-dark-300 max-w-[280px] md:max-w-[600px] text-3xl font-medium">
-              Join over 12,000+ Cube babes
+            <div className="text-dark-300 max-w-[280px] md:max-w-[600px] text-3xl font-primary300">
+              Join the Cube community today
             </div>
             <div className="text-lg">
               Stay in the loop with everything you need to know.
@@ -106,7 +106,7 @@ const Hero = () => {
               <input
                 type={"email"}
                 placeholder="Enter your email"
-                className="outline-none rounded-lg p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+                className="outline-none rounded-full p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
               />
               <span className="block text-light-200 text-sm">
                 We care about your data in our

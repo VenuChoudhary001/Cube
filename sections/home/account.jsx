@@ -129,8 +129,9 @@ const Accounts = () => {
               </div>
               <div className="hidden">
                 <div className="text-lg font-primary200 text-dark-10 md:text-base">
-                  We value relationships in an authentic and well moderated
-                  environment. So every user is a verified user only.
+                  We prioritize trust and authenticity on our platform. All
+                  accounts are verified, so you can be sure you're connecting
+                  with genuine individuals who are looking for real connections.
                 </div>
               </div>
             </div>
@@ -182,8 +183,9 @@ const Accounts = () => {
             </div>
 
             <div className="hidden max-w-[300px] font-primary200 xl:max-w-[400px] text-base max text-dark-400 md:text-xl">
-              We value relationships in an authentic and well moderated
-              environment. So every user is a verified user only.
+              We prioritize trust and authenticity on our platform. All accounts
+              are verified, so you can be sure you're connecting with genuine
+              individuals who are looking for real connections.
             </div>
           </main>
         </section>

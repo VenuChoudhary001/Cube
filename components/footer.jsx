@@ -64,7 +64,7 @@ const Footer = () => {
               <Image alt="" src={"/icons/youtube.svg"} width={24} height={24} />
             </div>
             <div className="text-white/70 cursor-pointer cursor-pointer hover:underline text-sm md:text-base  ">
-              cubedating.co
+              hello@cubedating.co
             </div>
           </main>
         </div>

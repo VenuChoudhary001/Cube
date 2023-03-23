@@ -19,7 +19,7 @@ const VideoPlayer = () => {
 
   return (
     <video
-      className="absolute h-[80vh] lg:h-[90vh] xl:h-[950px] top-0 left-0 w-full object-cover "
+      className="absolut h-[80vh] lg:h-[90vh] xl:h-[750px] top-0 left-0 w-full object-contain "
       type={"video/mp4"}
       loop
       muted

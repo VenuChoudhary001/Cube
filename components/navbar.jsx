@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const router = useRouter();
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   useEffect(() => {
     if (show) {
       document.body.style.overflow = "hidden";

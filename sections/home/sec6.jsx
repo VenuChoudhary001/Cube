@@ -39,8 +39,14 @@ const Sec6 = () => {
           className={"scale-[0.2]"}
           height={251}
         />
-        <div className="text-3xl max-w-[300px] text-center md:max-w-[500px] font-primary300 md:text-5xl">
-          Ready to break the ice?
+        <div className="flex flex-col gap-2 items-start justify-start">
+          <div className="text-3xl max-w-[300px] text-center md:max-w-[500px] font-primary300 md:text-5xl">
+            Ready to break the ice?
+          </div>
+          <div className="text-xl text-dark-100 max-w-[320px] md:max-w-[500px]">
+            Join the Cube community today and start making real connections that
+            last
+          </div>
         </div>
         <Link
           href={"/waitlist"}

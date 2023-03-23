@@ -117,8 +117,8 @@ const Sec3 = () => {
           Spark new connections through videos
         </div>
         <div className="text-xl text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
-          Create or upload short videos that highlight your
-          personality and interests
+          Be your true self and make authentic connections on Cube, the platform
+          that values honesty and transparency
         </div>
         <article className="relative mx-auto  max-w-[85vw] lg:max-w-[900px] xl:max-w-[1100px] mx-auto flex gap-6 bg-light-300 min-h-[250px] md:min-h-[389px] rounded-[15px] md:rounded-[48px] w-full -z-10">
           <img
