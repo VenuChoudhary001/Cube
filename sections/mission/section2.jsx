@@ -48,9 +48,9 @@ const Section2 = () => {
               02
             </div>
             <div className="max-w-[512px] text-dark-300 text-xl lg:text-2xl xl:text-3xl">
-              We believe in the power of intentionality and encourage our users
-              to create videos that showcase their values and interests, with
-              the intention of finding meaningful connections.
+              Our belief in the power of intentionality inspires us to motivate
+              our users to produce videos that exhibit their values and
+              interests, with the purpose of finding meaningful connections.
             </div>
           </main>
           <Image
@@ -77,9 +77,8 @@ const Section2 = () => {
               03
             </div>
             <div className=" lg:max-w-[400px] xl:max-w-[512px] text-dark-200 text-xl lg:text-2xl xl:text-3xl">
-              We believe in the power of intentionality and encourage our users
-              to create videos that showcase their values and interests, with
-              the intention of finding meaningful connections.
+              We are committed to creating a respectful and safe environment for
+              all users, where everyone is treated with dignity and respect.
             </div>
           </main>
           <Image

@@ -1,13 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Section3 = () => {
   return (
     <>
-      <section className="bg-dark-200 py- lg:py-10 xl:py-20 text-white">
-        <main className="container p-6 mx-auto flex flex-col gap-16 md:gap-24">
-          <div className="flex text-center text-2xl lg:text-3xl xl:text-4xl items-center h-[200px] xl:h-[226px] justify-center">
-            We are revolutionizing the world of online dating through videos
+      <section className="bg-dark-200 relative py- lg:py-10 xl:py-20 text-white">
+        <main className="relative">
+          <div className="container p-6 mx-auto flex flex-col gap-16 md:gap-24">
+            <div className="flex text-center flex-col text-2xl lg:text-3xl xl:text-4xl items-center h-[150px] xl:h-[226px] justify-center">
+              We are revolutionizing the world of online dating through videos
+              <hr className="h-[2px] absolute w-full bottom-0 bg-light-100 opacity-10" />
+            </div>
           </div>
+        </main>
+        <main className="container  p-6 mx-auto flex flex-col gap-16 md:gap-24">
           <div className="grid grid-cols-1 relative md:grid-cols-2 gap-12  md:gap-6 place-items-center">
             <Image
               src={"/mission/7-mob.png"}
@@ -23,15 +29,18 @@ const Section3 = () => {
                   And we’re just getting started
                 </span>
               </span>
-              <span className="block text-sm text-white opacity-70  max-w-[300px] md:text-xl md:max-w-[587px]">
+              <span className="block text-[20px] text-white opacity-70  max-w-[360px] md:text-xl md:max-w-[587px]">
                 Our philosophy is simple — hire a team of diverse, passionate
                 people and foster a culture that empowers you to do you best
                 work.
               </span>
-              <button className="bg-white font-primary400 mt-4 md:mt-0 w-[133px] md:w-[163px] text-black flex text-sm md:text-base items-center justify-center rounded-full h-10 md:h-12">
+              <Link
+                href={"/contact"}
+                className="bg-white font-primary400 mt-4 md:mt-0 w-[133px] md:w-[163px] text-black flex text-sm md:text-base items-center justify-center rounded-full h-10 md:h-12"
+              >
                 {" "}
-                Join Beta
-              </button>
+                Join Us
+              </Link>
             </article>
             <Image
               src={"/mission/7.png"}

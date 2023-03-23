@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
@@ -14,19 +14,34 @@ const Footer = () => {
           />
           <main className="flex flex-col gap-4">
             <div className="text-light-400   text-sm md:text-base">Company</div>
-            <div className="text-white/70   text-sm md:text-base ">Mission</div>
-            <div className="text-white/70   text-sm md:text-base ">Press</div>
-            <div className="text-white/70   text-sm md:text-base ">Contact</div>
+            <Link
+              href={"/mission"}
+              className="text-white/70 cursor-pointer   text-sm md:text-base "
+            >
+              Mission
+            </Link>
+            <Link
+              href={"/"}
+              className="text-white/70 cursor-pointer   text-sm md:text-base "
+            >
+              Press
+            </Link>
+            <Link
+              href={"/contact"}
+              className="text-white/70 cursor-pointer   text-sm md:text-base "
+            >
+              Contact
+            </Link>
           </main>
           <main className="flex flex-col gap-4">
             <div className="text-light-400 text-sm md:text-base">Legal</div>
-            <div className="text-white/70   text-sm md:text-base ">
+            <div className="text-white/70 cursor-pointer   text-sm md:text-base ">
               Community Guidelines
             </div>
-            <div className="text-white/70  text-sm md:text-base  ">
+            <div className="text-white/70 cursor-pointer  text-sm md:text-base  ">
               Terms & Conditions
             </div>
-            <div className="text-white/70   text-sm md:text-base ">
+            <div className="text-white/70 cursor-pointer   text-sm md:text-base ">
               Privacy Policy
             </div>
           </main>
@@ -34,14 +49,14 @@ const Footer = () => {
             <div className="text-light-400 text-sm md:text-base">
               Social Media
             </div>
-            <div className="text-white/70 flex gap-4">
+            <div className="text-white/70 cursor-pointer flex gap-4">
               <Image alt="" src={"/icons/insta.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/fb.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/twitter.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/youtube.svg"} width={24} height={24} />
             </div>
-            <div className="text-white/70 text-sm md:text-base  ">
-              hello@joincube.co
+            <div className="text-white/70 cursor-pointer cursor-pointer hover:underline text-sm md:text-base  ">
+              cubedating.co
             </div>
           </main>
         </div>

@@ -116,7 +116,7 @@ const Sec3 = () => {
         <div className="text-3xl lg:text-5xl text-dark-500 font-primary300 text-center">
           Spark new connections through videos
         </div>
-        <div className="text-xl text-dark-400 font-primary200 text-center max-w-[500px] mx-auto">
+        <div className="text-xl text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
           Create or upload short videos that highlight your
           personality and interests
         </div>

@@ -7,11 +7,13 @@ import Section3 from "../sections/mission/section3";
 const Mission = () => {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <Section2/>
-    <Section3/>
-    <Footer/>
+      <section className="h-[100vh]">
+        <Navbar />
+        <Hero />
+      </section>
+      <Section2 />
+      <Section3 />
+      <Footer />
     </>
   );
 };

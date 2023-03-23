@@ -14,13 +14,16 @@ const Hero = () => {
           className="md:hidden"
           src="/contact/mob.png"
         />
-        <main className="flex flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
+        <main className="flex md:px-6 flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
           <div className="text-lg md:text-base">Contact us</div>
-          <div className="text-4xl md:text-5xl md:mb-2 text-dark-300 font-bold">
+          <div className="text-4xl md:text-5xl md:mb-2 text-dark-100 font-bold">
             We'd love to hear from you
           </div>
           <span className="block text-lg md:text-xl text-black/90">
-            Send us a message at hello@joincube.co
+            Send us a message at{" "}
+            <span className="font-primary400 cusor-pointer">
+              &nbsp;hello@joincube.co
+            </span>
           </span>
         </main>
         <Image
@@ -31,7 +34,7 @@ const Hero = () => {
         />
       </section>
       <section className="max-w-[600px] mx-auto my-16 p-6 flex flex-col items-center justify-center gap-6 ">
-        <div className="text-4xl text-dark-300 font-bold">Get in touch</div>
+        <div className="text-4xl text-dark-100 font-bold">Get in touch</div>
         <span className="block text-lg text-black/90 text-center">
           We’d love to hear from you. Please fill out this form.
         </span>
@@ -54,38 +57,11 @@ const Hero = () => {
         <main className="flex gap-1 flex-col w-full">
           <div className="text-sm font-bold ">Phone number</div>
           <div className="relative flex gap-2 items-center border-[1px] px-3 border-light-100 text-black/70 rounded-lg">
-            <select
-              ref={selectRef}
-              className="cursor-pointer custom-select appearance-none p-3 bg-transparent"
-            >
-              <option>US</option>
-              <option>US</option>
-              <option>US</option>
-              <option>US</option>
-            </select>
-            <svg
-              onClick={() => selectRef.current.click()}
-              width="12"
-              height="8"
-              viewBox="0 0 12 8"
-              fill="none"
-              className="cursor-pointer absolute left-14"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 1.5L6 6.5L11 1.5"
-                stroke="black"
-                stroke-opacity="0.7"
-                stroke-width="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
             <input
               type={"text/number"}
               maxLength={10}
               className="w-full text-base outline-none p-3"
+              placeholder="XXXXXXXXX"
             />
           </div>
         </main>
@@ -105,7 +81,10 @@ const Hero = () => {
             />
           </div>
           <span className="block text-black/70">
-            You agree to our friendly privacy policy.
+            You agree to our friendly{" "}
+            <span className="underline font-semibold cursor-pointer">
+              privacy policy.
+            </span>
           </span>
         </main>
         <button className="p-3 bg-black/90 w-full rounded-full text-white h-12">
@@ -130,11 +109,14 @@ const Hero = () => {
                 className="outline-none rounded-lg p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
               />
               <span className="block text-light-200 text-sm">
-                We care about your data in our privacy policy.
+                We care about your data in our
+                <span className="underline font-semibold cursor-pointer">
+                  &nbsp;privacy policy.
+                </span>
               </span>
             </div>
 
-            <button className="p-3 bg-black w-full md:w-36 rounded-lg text-white mt-3 md:mt-0 h-12">
+            <button className="p-3 bg-black w-full md:w-36 rounded-full text-white mt-3 md:mt-0 h-12">
               Join
             </button>
           </div>

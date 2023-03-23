@@ -60,7 +60,7 @@ const Hero = () => {
     <>
       <section
         ref={containerRef}
-        className="relative font-primary-400 overflow-hidden w-full h-[800px] md:h-[974px]"
+        className="relative font-primary-400 overflow-hidden w-full h-[800px] md:h-[874px] 4xl:h-[974px]"
       >
         <Image
           src={"/home/1.png"}
@@ -88,17 +88,17 @@ const Hero = () => {
             <img
               src="/home/3.svg"
               alt=""
-              className=" w-[175px] -ml-[39px] -rotate-[29deg] hidden -mt-[50px] h-[164px] md:w-[248px] 2xl:w-[280px] 4xl:w-[320px] 5xl:-ml-16 5xl:-mt-[85px]  md:h-[240px] 2xl:h-[280px]  2xl:-mt-[45px]  md:-mt-[25px]  4xl:-ml-[23px] 4xl:-mt-[55px] md:ml-[70px] 2xl:ml-[37px] md:rotate-[10deg] 2xl:rotate-[1deg] "
+              className=" w-[175px] -ml-[39px] -rotate-[29deg] hidden -mt-[50px] h-[164px] md:w-[230px] xl:w-[248px] 2xl:w-[250px] 4xl:w-[320px] 5xl:-ml-16 5xl:-mt-[85px] md:h-[240px] xl:h-[240px] 2xl:h-[250px]  2xl:-mt-[85px]  md:-mt-[65px]  4xl:-ml-[23px] 4xl:-mt-[55px] md:ml-[70px] 2xl:ml-[37px] md:-rotate-[5deg] xl:rotate-[10deg] 2xl:-rotate-[1deg] "
             />
             <img
               src="/home/4.svg"
               alt=""
-              className="w-[170px] -rotate-[3deg] hidden -mr-[25px] h-[164px] md:w-[240px] md:hidden 2xl:w-[250px] 4xl:w-[280px] 5xl:w-[290px] 5xl:-mr-[45px] 5xl:mt-[7px] 4xl:mr-[10px]  md:h-[240px] 2xl:h-[280px] md:mt-[50px] 2xl:mt-[30px] md:rotate-[20deg] md:mr-[53px]  2xl:mr-[52px] 2xl:rotate-[18deg] "
+              className="w-[170px] -rotate-[3deg] hidden -mr-[25px] h-[164px] md:w-[220px] xl:w-[240px]  md:hidden 2xl:w-[250px] 4xl:w-[280px] 5xl:w-[290px] 5xl:-mr-[45px] 5xl:mt-[7px] 4xl:mr-[10px]  md:h-[240px] 2xl:h-[250px] md:-mt-[0px] 2xl:mt-[0px] md:rotate-[20deg] xl:rotate-[26deg] xl:mr-[53px] md:mr-[78px]  2xl:mr-[58px] 2xl:rotate-[22deg] "
             />
           </div>
           <div className="text-5xl max-w-[320px] mx-auto md:max-w-[700px] hidden md:text-7xl  font-primary300 min-h-[350px] flex flex-col items-center justify-center text-center text-white">
             You’ve matched!
-            <div className="text-sm my-2 max-w-[250px] mx-auto md:max-w-[700px] md:text-xl font-normal">
+            <div className="text-base my-2 max-w-[250px] mx-auto md:max-w-[700px] md:text-xl font-normal">
               You and Jessica have common interests.
             </div>
           </div>

@@ -8,7 +8,7 @@ const Sec2 = () => {
         <main className="font-primary300 text-center  text-dark-500 text-3xl md:text-5xl">
           The video-based dating app
         </main>
-        <main className="font-primary200 max-w-[350px] md:max-w-[700px] text-center text-base md:text-xl text-dark-400">
+        <main className="font-primary200 max-w-[380px] md:max-w-[700px] text-center text-xl md:text-xl text-dark-200">
           Be your true self and make authentic connections on Cube, the platform
           that values honesty and transparency
         </main>
