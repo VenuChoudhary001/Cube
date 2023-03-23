@@ -13,7 +13,7 @@ const Sec2 = () => {
           that values honesty and transparency
         </main>
       </section>
-      <div className="relative w-full h-[60vh] lg:h-[820px] xl:h-[1150px] ">
+      <div className="relative w-full h-[90vh] lg:h-[90vh] overflow-hidden xl:h-[950px] ">
         <VideoPlayer />
       </div>
     </>

@@ -82,7 +82,7 @@ const Hero = () => {
           <img
             src="/home/2.png"
             alt=""
-            className="w-[200px] mt-[120px] md:mt-16 md:mt-[50px] -mr-[50px] h-[350px] md:w-[300px] scale-110 3xl:-mr-16  ml-auto md:h-[480px] object-contain lg:mr-[50px] xl:mr-0"
+            className="w-[200px] mt-[120px] md:mt-[18px] -mr-[50px] h-[350px] md:w-[300px] scale-110 3xl:-mr-16  ml-auto md:h-[480px] object-contain lg:mr-[50px] xl:mr-0"
           />
           <div className="mt-[100px] mb-[50px] lg:mb-[100px] md:-mt-[28px] flex relative justify-between">
             <img
