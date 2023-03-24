@@ -8,19 +8,19 @@ body {
 
 @font-face {
   font-family: Primary;
-  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Regular.otf");
+  src: url("../public/fonts/P22Mackinac-Book_13.otf");
 }
 @font-face {
   font-family: TemposMedium;
-  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Medium.otf");
+  src: url("../public/fonts/P22Mackinac-Medium_6.otf");
 }
 @font-face {
   font-family: TemposSemibold;
-  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Semibold.otf");
+  src: url("../public/fonts/P22Mackinac-Bold_23.otf");
 }
 @font-face {
   font-family: TemposBold;
-  src: url("../public/fonts/Tiempos-Font/TiemposHeadline-Bold.otf");
+  src: url("../public/fonts/P22Mackinac-ExtraBold_9.otf");
 }
 @font-face {
   font-family: TemposLight;
@@ -56,3 +56,13 @@ body {
     width: 50%;
   }
 }
+
+/* .bg {
+  background: url("../public/home/1.png") no-repeat center/cover;
+}
+
+@media screen and (max-width: 500px) {
+  .bg {
+    background: url("../public/home/1_mob.png") no-repeat center/cover;
+  }
+} */

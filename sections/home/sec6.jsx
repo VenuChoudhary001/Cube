@@ -30,7 +30,7 @@ const Sec6 = () => {
     <>
       <section
         ref={containerRef}
-        className="container md:min-h-[400px] min-h-[450px] mb-16  mx-auto flex items-center flex-col md:flex-row justify-evenly  gap-2 place-items-center"
+        className="container md:min-h-[400px] min-h-[450px] mb-16  mx-auto flex items-center flex-col xl:flex-row justify-evenly gap-8  lg:gap-12 xl:gap-2 place-items-center"
       >
         <Image
           ref={imgRef}
@@ -40,10 +40,10 @@ const Sec6 = () => {
           height={251}
         />
         <div className="flex flex-col gap-2 items-start justify-start">
-          <div className="text-3xl max-w-[300px] text-center md:max-w-[500px] font-primary300 md:text-5xl">
+          <div className="text-3xl max-w-[330px] text-center md:max-w-[700px] font-primary300 md:text-5xl">
             Ready to break the ice?
           </div>
-          <div className="text-xl text-dark-100 max-w-[320px] md:max-w-[500px]">
+          <div className="text-xl text-dark-100 max-w-[320px] md:max-w-[500px] text-center">
             Join the Cube community today and start making real connections that
             last
           </div>

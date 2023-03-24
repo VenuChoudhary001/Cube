@@ -63,6 +63,15 @@ const Footer = () => {
               <Image alt="" src={"/icons/twitter.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/youtube.svg"} width={24} height={24} />
             </div>
+            <div className="text-light-400 hidden md:block text-sm md:text-base mt-2">
+              Contact
+            </div>
+            <div className="text-white/70 cursor-pointer hidden md:block -mt-3 cursor-pointer hover:underline text-sm md:text-base  ">
+              hello@cubedating.co
+            </div>
+          </main>
+          <main className="flex  flex-col gap-4 md:hidden">
+            <div className="text-light-400 text-sm md:text-base">Contact</div>
             <div className="text-white/70 cursor-pointer cursor-pointer hover:underline text-sm md:text-base  ">
               hello@cubedating.co
             </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <section className="container h-[80vh] md:mb-24 mx-auto flex flex-col md:flex-row px-3 justify-between  items-center gap-10 md:gap-12">
+      <section className="container h-[80vh] lg:h-[600px] xl:h-[750px] md:mb-24 mx-auto flex flex-col md:flex-row px-3 justify-between  items-center gap-10 md:gap-12">
         <div className=" w-[94vw] max-w-[440px] h-[432px]  md:hidden relative ">
           <Image
             layout="fill"

@@ -113,8 +113,8 @@ const Sec5 = () => {
         ref={containerRef}
         className="bg-light-50 overflow-x-hidden pt-12 md:py-0 my-[150px] md:my-0"
       >
-        <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-2 place-items-center">
-          <article className=" hidden md:flex ml-[2vw] flex-col gap-6">
+        <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-8 place-items-center">
+          <article className=" hidden md:flex ml-[2vw]  flex-col gap-6">
             <main className="text-5xl font-primary400 font-semibol">
               Seize the moment
             </main>

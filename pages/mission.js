@@ -7,7 +7,7 @@ import Section3 from "../sections/mission/section3";
 const Mission = () => {
   return (
     <>
-      <section className="h-[100vh]">
+      <section className="xl:h-[100vh]">
         <Navbar />
         <Hero />
       </section>

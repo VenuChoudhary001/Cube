@@ -75,10 +75,11 @@ const Accounts = () => {
       y: -270,
       delay: 1.2,
       marginLeft: "2vw",
-    }).to(webTxt.current.children[1], {
+    }).to([webTxt.current.children[1], webTxt.current.children[0]], {
       display: "block",
       opacity: 1,
       delay: 0.2,
+      color: "#000",
     });
 
     t0.from(
@@ -176,9 +177,9 @@ const Accounts = () => {
           </main>
           <main
             ref={webTxt}
-            className="flex flex-col p-6 gap-5 max-w-[400px] xl:max-w-[650px]"
+            className="flex flex-col text-white p-6 gap-5 max-w-[400px] xl:max-w-[650px]"
           >
-            <div className="text-3xl font-primary300 md:text-[45px] text-dark-200 font-bol">
+            <div className="text-3xl font-primary300 md:text-[45px] font-bol">
               Verified accounts only
             </div>
 
