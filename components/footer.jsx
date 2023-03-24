@@ -29,10 +29,16 @@ const Footer = () => {
               Mission
             </Link>
             <Link
-              href={"/"}
+              href={"/press"}
               className="text-white/70 cursor-pointer   text-sm md:text-base "
             >
               Press
+            </Link>
+            <Link
+              href={"/careers"}
+              className="text-white/70 cursor-pointer   text-sm md:text-base "
+            >
+              Careers
             </Link>
             <Link
               href={"/contact"}

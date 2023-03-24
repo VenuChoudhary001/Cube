@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <>
       <section className="relative h-[750px] lg:h-[803px]">
-        <main className="relative w-full h-[410px]">
+        <main className="relative w-full h-[370px] lg:h-[410px]">
           <Image
             src={"/careers/1.png"}
             layout="fill"
@@ -37,7 +37,7 @@ const Landing = () => {
         </main>
       </section>
       <section className="h-[418px] bg-dark-700  font-primary400 ">
-        <main className=" max-w-[350px] lg:max-w-[950px] text-white text-2xl lg:text-4xl mx-auto h-full flex items-center justify-center">
+        <main className="px-6 md:px-0 max-w-[360px] lg:max-w-[950px] text-white text-2xl lg:text-4xl mx-auto h-full flex items-center justify-center">
           Our philosophy is simple — hire a team of diverse, passionate people
           and foster a culture that empowers everyone to be themselves.
         </main>

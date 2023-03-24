@@ -193,6 +193,14 @@ export const Drawer = ({ setShow, active }) => {
           >
             Press
           </Link>
+          <Link
+            href={"/careers"}
+            className={`  flex ${
+              active == "/careers" ? "text-4xl" : "text-3xl text-light-200"
+            } items-center py-1 justify-center`}
+          >
+            Careers
+          </Link>
         </div>
       </main>
     </>
