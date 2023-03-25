@@ -40,7 +40,7 @@ const Sec6 = () => {
           height={251}
         />
         <div className="flex flex-col gap-2 items-start justify-start">
-          <div className="text-3xl max-w-[330px] text-center md:max-w-[700px] font-primary300 md:text-5xl">
+          <div className="text-3xl max-w-[350px] text-center md:max-w-[700px] font-primary400 md:text-5xl">
             Ready to break the ice?
           </div>
           <div className="text-xl text-dark-100 max-w-[320px] md:max-w-[500px] text-center">

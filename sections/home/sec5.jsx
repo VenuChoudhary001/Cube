@@ -115,9 +115,7 @@ const Sec5 = () => {
       >
         <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-8 place-items-center">
           <article className=" hidden md:flex ml-[2vw]  flex-col gap-6">
-            <main className="text-5xl font-primary400 font-semibol">
-              Seize the moment
-            </main>
+            <main className="text-5xl font-primary400">Seize the moment</main>
             <main className="text-xl font-primary200 text-dark-400 max-w-[600px]">
               Strike while the ice is cold: our 24-hour rule for meaningful
               connections. Otherwise it disappears and you prepare the next
@@ -171,9 +169,7 @@ const Sec5 = () => {
             </main>
           </article>
           <article className=" flex items-center text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
-            <main className="text-4xl  font-primary300 font-semibold">
-              Seize the moment
-            </main>
+            <main className="text-4xl  font-primary400">Seize the moment</main>
             <main className="text-xl  font-primary200">
               Strike while the ice is cold: our 24-hour rule for meaningful
               connections. Otherwise it disappears and you prepare the next

@@ -113,7 +113,7 @@ const Sec3 = () => {
         ref={containerRef}
         className="relative overflow-x-hidden overflow-y-hidden container min-h-[720px] md:min-h-[1024px] justify-center mx-auto flex flex-col gap-8"
       >
-        <div className="text-3xl lg:text-5xl text-dark-500 font-primary300 text-center">
+        <div className="text-3xl lg:text-5xl text-dark-500 font-primary400 text-center">
           Spark new connections through videos
         </div>
         <div className="text-xl text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
