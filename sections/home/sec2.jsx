@@ -8,7 +8,7 @@ const Sec2 = () => {
         <main className="font-primary400 max-w-[350px] md:max-w-[900px] text-center  text-dark-500 text-3xl md:text-5xl">
           Real Connection starts with Cube
         </main>
-        <main className="font-primary200 max-w-[380px] md:max-w-[700px] text-center text-xl md:text-xl text-dark-200">
+        <main className="font-primary200 max-w-[380px] md:max-w-[700px] text-center text-lg md:text-xl text-dark-200">
           Express your true self through short, engaging videos and connect on a
           deeper level to form meaningful relationships that last.
         </main>

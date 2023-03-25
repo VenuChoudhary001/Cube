@@ -124,7 +124,7 @@ const Accounts = () => {
               className="flex  flex-col p-6 gap-3  max-w-[500px]"
             >
               <div className="hidden">
-                <div className="text-4xl font-primary300 md:text-4xl text-dark-200">
+                <div className="text-[32px] font-primary400 md:text-4xl text-dark-200">
                   Verified accounts only
                 </div>
               </div>

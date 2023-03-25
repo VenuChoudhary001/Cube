@@ -37,10 +37,20 @@ const Waitlist = () => {
                   className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
                 />
               </main>
-              <span className="block text-black/70">
-                By signing up, you agree to our Privacy Policy and Terms of
-                Service
-              </span>
+              <main className="flex items-center gap-2 w-full">
+                <div className="flex relative">
+                  <input
+                    type={"checkbox"}
+                    className="appearance-none w-[15px] h-[10px] checked:bg-green-300 outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+                  />
+                </div>
+                <span className="block text-black/70">
+                  You agree to our friendly{" "}
+                  <span className="underline font-semibold cursor-pointer">
+                    privacy policy.
+                  </span>
+                </span>
+              </main>
               <button className="p-3 bg-black w-full rounded-full text-white h-12">
                 Join Beta
               </button>

@@ -116,7 +116,7 @@ const Sec3 = () => {
         <div className="text-3xl lg:text-5xl text-dark-500 font-primary400 text-center">
           Spark new connections through videos
         </div>
-        <div className="text-xl text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
+        <div className="text-lg text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
           Be your true self and make authentic connections on Cube, the platform
           that values honesty and transparency
         </div>

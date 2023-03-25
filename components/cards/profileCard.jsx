@@ -8,6 +8,7 @@ export const ProfileCard = () => {
         <Image
           src={"/card/bg.png"}
           layout="fill"
+          priority
           objectFit="cover"
           className="-z-10"
         />

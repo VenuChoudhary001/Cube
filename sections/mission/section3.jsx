@@ -7,7 +7,7 @@ const Section3 = () => {
       <section className="bg-dark-200 relative py- lg:py-10 xl:py-20 text-white">
         <main className="relative">
           <div className="container p-6 mx-auto flex flex-col gap-16 md:gap-24">
-            <div className="flex text-center flex-col text-2xl lg:text-3xl xl:text-4xl items-center h-[150px] xl:h-[226px] justify-center">
+            <div className="flex text-center font-primary400 flex-col text-2xl lg:text-3xl xl:text-4xl items-center h-[150px] xl:h-[226px] justify-center">
               We are revolutionizing the world of online dating through videos
               <hr className="h-[2px] absolute w-full bottom-0 bg-light-100 opacity-10" />
             </div>

@@ -170,7 +170,7 @@ const Sec5 = () => {
           </article>
           <article className=" flex items-center text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
             <main className="text-4xl  font-primary400">Seize the moment</main>
-            <main className="text-xl  font-primary200">
+            <main className="text-lg  font-primary200">
               Strike while the ice is cold: our 24-hour rule for meaningful
               connections. Otherwise it disappears and you prepare the next
               arrow.

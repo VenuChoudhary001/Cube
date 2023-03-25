@@ -43,9 +43,9 @@ const Sec6 = () => {
           <div className="text-3xl max-w-[350px] text-center md:max-w-[700px] font-primary400 md:text-5xl">
             Ready to break the ice?
           </div>
-          <div className="text-xl text-dark-100 max-w-[320px] md:max-w-[500px] text-center">
+          <div className="text-lg text-dark-100 max-w-[320px] md:max-w-[500px] text-center">
             Join the Cube community today and start making real connections that
-            last
+            last.
           </div>
         </div>
         <Link

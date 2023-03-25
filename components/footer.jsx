@@ -48,14 +48,14 @@ const Footer = () => {
             </Link>
           </main>
           <main className="flex flex-col gap-4">
-            <div className="text-light-400 text-sm md:text-base">Legal</div>
-            <div className="text-white/70 cursor-pointer   text-sm md:text-base ">
+            <div className="text-light-400 text-base">Legal</div>
+            <div className="text-white/70 cursor-pointer  font-primary300 text-[15px] md:text-base ">
               Community Guidelines
             </div>
-            <div className="text-white/70 cursor-pointer  text-sm md:text-base  ">
+            <div className="text-white/70 cursor-pointer font-primary300 text-[15px] md:text-base  ">
               Terms & Conditions
             </div>
-            <div className="text-white/70 cursor-pointer   text-sm md:text-base ">
+            <div className="text-white/70 cursor-pointer  font-primary300 text-[15px] md:text-base ">
               Privacy Policy
             </div>
           </main>
