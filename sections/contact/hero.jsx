@@ -22,7 +22,7 @@ const Hero = () => {
           <span className="block text-lg md:text-xl text-black/90">
             Send us a message at{" "}
             <span className="font-primary400 cusor-pointer">
-              &nbsp;hello@joincube.co
+              &nbsp;hello@cubedating.co
             </span>
           </span>
         </main>

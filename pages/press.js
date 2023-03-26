@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "../components/navbar";
+import PressHero from "../sections/press/hero";
 
 const Press = () => {
-  return <div>Press</div>;
+  return (
+    <>
+      <Navbar />
+      <PressHero />
+    </>
+  );
 };
 
 export default Press;

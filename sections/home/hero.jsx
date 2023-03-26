@@ -103,7 +103,7 @@ const Hero = () => {
             </div>
           </div>
         </main>
-        <main className="absolute bottom-[150px] ml-[25px] md:ml-[50px] flex flex-col gap-6">
+        <main className="absolute hidden bottom-[150px] ml-[25px] md:ml-[50px] md:flex flex-col gap-6">
           <img
             src="/icons/insta_white.svg"
             alt=""

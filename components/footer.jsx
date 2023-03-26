@@ -21,28 +21,28 @@ const Footer = () => {
             onClick={() => handleClick("")}
           />
           <main className="flex flex-col gap-4">
-            <div className="text-light-400   text-sm md:text-base">Company</div>
+            <div className="text-light-400  text-base">Company</div>
             <Link
               href={"/mission"}
-              className="text-white/70 cursor-pointer   text-sm md:text-base "
+              className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "
             >
               Mission
             </Link>
             <Link
               href={"/press"}
-              className="text-white/70 cursor-pointer   text-sm md:text-base "
+              className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "
             >
               Press
             </Link>
             <Link
               href={"/careers"}
-              className="text-white/70 cursor-pointer   text-sm md:text-base "
+              className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "
             >
               Careers
             </Link>
             <Link
               href={"/contact"}
-              className="text-white/70 cursor-pointer   text-sm md:text-base "
+              className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "
             >
               Contact
             </Link>
@@ -60,16 +60,14 @@ const Footer = () => {
             </div>
           </main>
           <main className="flex flex-col gap-4">
-            <div className="text-light-400 text-sm md:text-base">
-              Social Media
-            </div>
+            <div className="text-light-400 text-base">Social Media</div>
             <div className="text-white/70 cursor-pointer flex gap-4">
               <Image alt="" src={"/icons/insta.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/fb.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/twitter.svg"} width={24} height={24} />
               <Image alt="" src={"/icons/youtube.svg"} width={24} height={24} />
             </div>
-            <div className="text-light-400 hidden md:block text-sm md:text-base mt-2">
+            <div className="text-light-400 hidden md:block md:text-base mt-2">
               Contact
             </div>
             <div className="text-white/70 cursor-pointer hidden md:block -mt-3 cursor-pointer hover:underline text-sm md:text-base  ">
@@ -77,20 +75,15 @@ const Footer = () => {
             </div>
           </main>
           <main className="flex  flex-col gap-4 md:hidden">
-            <div className="text-light-400 text-sm md:text-base">Contact</div>
-            <div className="text-white/70 cursor-pointer cursor-pointer hover:underline text-sm md:text-base  ">
+            <div className="text-light-400 text-base">Contact</div>
+            <div className="text-white/70 font-primary300 cursor-pointer cursor-pointer hover:underline text-[15px] md:text-base  ">
               hello@cubedating.co
             </div>
           </main>
         </div>
-        <div className="flex px-5 md:px-0 flex-col w-full container gap-2">
+        <div className="flex px-5 md:px-0 flex-col w-full text-white container gap-2">
           <div className="h-[1px] bg-white/30 w-full mb-6 md:mb-0"></div>
-          <Image
-            alt=""
-            src={"/icons/copywright_white.svg"}
-            width={74}
-            height={20}
-          />
+          &#169;Copywright 2023 Cube
         </div>
       </main>
     </>

@@ -52,13 +52,15 @@ const Navbar = () => {
             Careers
             <div className=" w-[50%]"></div>
           </Link>
-          <span
-            className={`block font-primary300 ${
-              router.pathname == "/" && "anim_active"
+          <Link
+            href="/press"
+            className={`block flex items-start font-primary300 justify-center flex-col ${
+              router.pathname == "/press" && "anim_active"
             }`}
           >
             Press
-          </span>
+            <div className=" w-[50%]"></div>
+          </Link>
         </div>
         <div
           className={`absolute left-[48%] font-primary500 text-4xl ${

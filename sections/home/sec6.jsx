@@ -44,8 +44,7 @@ const Sec6 = () => {
             Ready to break the ice?
           </div>
           <div className="text-lg text-dark-100 max-w-[320px] md:max-w-[500px] text-center">
-            Join the Cube community today and start making real connections that
-            last.
+            Join the Cube community today and start making real connections.
           </div>
         </div>
         <Link
