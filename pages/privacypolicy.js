@@ -219,11 +219,11 @@ const Privacypolicy = () => {
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
             We may receive information about you from our partners where our ads
-            are published on a partner’s service (in which case they may pass
-            along details on a campaign’s success). Where legally allowed, we
-            can also receive information about suspected or convicted bad actors
-            from third parties as part of our efforts to ensure our users’
-            safety and security.{" "}
+            are published on a partner&apos;s service (in which case they may
+            pass along details on a campaign&apos;s success). Where legally
+            allowed, we can also receive information about suspected or
+            convicted bad actors from third parties as part of our efforts to
+            ensure our users&apos; safety and security.{" "}
           </div>
           <div className="font-primary400 text-[17px] md:text-lg">
             <span className="font-primary400">
@@ -233,8 +233,8 @@ const Privacypolicy = () => {
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
             When you use our services, this generates technical data about which
-            features you’ve used, how you’ve used them and the devices you use
-            to access our services. See below for more details.
+            features you&apos;ve used, how you&apos;ve used them and the devices
+            you use to access our services. See below for more details.
           </div>
           <ul className=" ml-5 list-disc text-xl font-primary500">
             <li>Usage Information</li>
@@ -242,9 +242,9 @@ const Privacypolicy = () => {
           <div className="font-primary300 text-[15px] md:text-lg">
             Using the services generates data about your activity on our
             services, for instance how you use them (e.g., when you logged in,
-            features you’ve been using, actions taken, information shown to you,
-            referring webpages address and ads that you interacted with) and
-            your interactions with other users (e.g., users you connect and
+            features you&apos;ve been using, actions taken, information shown to
+            you, referring webpages address and ads that you interacted with)
+            and your interactions with other users (e.g., users you connect and
             interact with, and when you matched and exchanged messages with
             them).
           </div>
@@ -256,7 +256,7 @@ const Privacypolicy = () => {
             access our services, including hardware and software information
             such as IP address, device ID and type, apps settings and
             characteristics, app crashes, advertising IDs (which are randomly
-            generated numbers that you can reset by going into your device’
+            generated numbers that you can reset by going into your device
             settings and, in some cases, disable entirely), and identifiers
             associated with cookies or other technologies that may uniquely
             identify a device or browser.
@@ -276,9 +276,10 @@ const Privacypolicy = () => {
             that a user does not want to have his or her online activity
             tracked. If a website that responds to a DNT signal receives a DNT
             signal, the browser can block that website from collecting certain
-            information about the browser’s user. Not all browsers offer a DNT
-            option and DNT signals are not yet uniform. For this reason, many
-            businesses, including Cube, do not currently respond to DNT signals.
+            information about the browser&apos;s user. Not all browsers offer a
+            DNT option and DNT signals are not yet uniform. For this reason,
+            many businesses, including Cube, do not currently respond to DNT
+            signals.
           </div>
           <ul className=" ml-5 list-disc text-xl font-primary500">
             <li>Other Information with your Consent</li>
@@ -287,21 +288,21 @@ const Privacypolicy = () => {
             <span className="font-primary400 ">Precise geolocation data</span>:
             If you give us your consent, we can collect your precise geolocation
             (latitude and longitude) from your device. The collection of your
-            geolocation may occur in the background even when you aren’t using
-            the services if the permission you gave us expressly permits such
-            collection. If you decline permission for us to collect your precise
-            geolocation, we will not collect it, and our services that rely on
-            precise geolocation may not be available to you.
+            geolocation may occur in the background even when you aren&apos;t
+            using the services if the permission you gave us expressly permits
+            such collection. If you decline permission for us to collect your
+            precise geolocation, we will not collect it, and our services that
+            rely on precise geolocation may not be available to you.
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
             <span className="font-primary400 ">Selfie Verification data: </span>
             : If you choose to participate in our Selfie Verification feature,
             we collect your face geometry data, which may be considered
-            biometric data in some jurisdictions, to verify that you’re the real
-            you. You can learn more about Selfie Verification and how we process
-            your face geometry data here. Other information: We may collect
-            other information with your permission, such as photos and videos
-            (for instance, if you want to publish a photo or video or
+            biometric data in some jurisdictions, to verify that you&apos;re the
+            real you. You can learn more about Selfie Verification and how we
+            process your face geometry data here. Other information: We may
+            collect other information with your permission, such as photos and
+            videos (for instance, if you want to publish a photo or video or
             participate in streaming features on our services).
           </div>
 
