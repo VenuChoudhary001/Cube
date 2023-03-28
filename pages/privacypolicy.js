@@ -13,21 +13,21 @@ const Privacypolicy = () => {
           {/* <div className="font-primary300 text-2xl">Terms of Use Agreement</div> */}
           <div className="flex flex-col gap-1">
             <span className="text-dark-300 text-xl font-primary400 ">
-              Effective date : <span className=" font-bold">3/4/2023</span>{" "}
+              Effective date : <span className=" font-bold">3/4/2023</span>
             </span>
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
             At Cube, we take your privacy seriously. This Privacy Policy
             describes the types of information we may collect from you or that
-            you may provide when you use Cube's mobile application (the "App"),
-            and our practices for collecting, using, maintaining, protecting,
-            and disclosing that information. Your privacy is at the core of the
-            way we design and build the services and products you know and have
-            come to love, so that you can fully trust them and focus on building
-            meaningful connections.
+            you may provide when you use Cube&apos;s mobile application (the
+            &quot;App&quot;), and our practices for collecting, using,
+            maintaining, protecting, and disclosing that information. Your
+            privacy is at the core of the way we design and build the services
+            and products you know and have come to love, so that you can fully
+            trust them and focus on building meaningful connections.
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
-            If you are a California resident, please see our{" "}
+            If you are a California resident, please see our
             <span className="font-primary500 underline">
               California Privacy Statement
             </span>{" "}
@@ -86,7 +86,7 @@ const Privacypolicy = () => {
             Because we use many of the same online services you do, we know that
             insufficient information and overly complicated language are common
             issues in privacy policies. We take the exact opposite approach:
-            we’re doing our best to write our Privacy Policy and related
+            we&apos;re doing our best to write our Privacy Policy and related
             documents in plain language. We actually want you to read our
             policies and understand our privacy practices!
           </div>
@@ -141,7 +141,7 @@ const Privacypolicy = () => {
             When you create an account, you provide us with at least your phone
             number and email address, as well as some basic details necessary
             for the service to work, such as your gender, date of birth, and who
-            you’d like to connect with.
+            you&apos;d like to connect with.
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
             When you complete your profile, you have the option to share your
@@ -223,7 +223,7 @@ const Privacypolicy = () => {
             pass along details on a campaign&apos;s success). Where legally
             allowed, we can also receive information about suspected or
             convicted bad actors from third parties as part of our efforts to
-            ensure our users&apos; safety and security.{" "}
+            ensure our users&apos; safety and security.
           </div>
           <div className="font-primary400 text-[17px] md:text-lg">
             <span className="font-primary400">
