@@ -14,7 +14,7 @@ const Hero = () => {
           className="md:hidden"
           src="/contact/mob.png"
         />
-        <main className="flex md:px-6 flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[600px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
+        <main className="flex md:px-6 flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[650px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
           <div className="text-lg md:text-base font-primary300">Contact us</div>
           <div className="text-4xl md:text-5xl md:mb-2 text-dark-100 font-bold">
             We'd love to hear from you
@@ -77,7 +77,7 @@ const Hero = () => {
           <div className="flex relative">
             <input
               type={"checkbox"}
-              className="appearance-none w-[15px] h-[10px] checked:bg-green-300 outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+              className="appearance-none w-[15px] h-[10px] checked:bg-black outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
             />
           </div>
           <span className="block text-black/70">

@@ -88,7 +88,7 @@ const Landing = () => {
           <div className="flex relative">
             <input
               type={"checkbox"}
-              className="appearance-none w-[15px] h-[10px] checked:bg-green-300 outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
+              className="appearance-none w-[15px] h-[10px] checked:bg-black outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
             />
           </div>
           <span className="block text-black/70">

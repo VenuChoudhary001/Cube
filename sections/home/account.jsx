@@ -179,7 +179,7 @@ const Accounts = () => {
             ref={webTxt}
             className="flex flex-col text-white p-6 gap-5 max-w-[400px] xl:max-w-[650px]"
           >
-            <div className="text-3xl font-primary300 md:text-[45px] font-bol">
+            <div className="text-3xl font-primary400 md:text-[45px] font-bol">
               Verified accounts only
             </div>
 

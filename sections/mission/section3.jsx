@@ -25,7 +25,7 @@ const Section3 = () => {
             <article className="flex  items-center md:items-start text-center md:text-left flex-col gap-3 md:gap-8">
               <span className="block flex flex-col gap-3">
                 <span className="hidden md:block text-lg">Join our team</span>
-                <span className="block text-3xl md:max-w-[800px] lg:text-3xl xl:text-[40px] font-primary400">
+                <span className="block text-3xl md:max-w-[800px] lg:text-4xl xl:text-5xl font-primary400">
                   And we’re just getting started
                 </span>
               </span>
