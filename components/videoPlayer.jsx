@@ -1,33 +1,38 @@
 import React, { useState, useRef, useEffect } from "react";
-
+import { IKVideo, IKContext } from "imagekitio-react";
 const VideoPlayer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
-
+  const [play, setPlay] = useState(false);
   useEffect(() => {
-    // const observer = new IntersectionObserver(
-    //   (entries) => {
-    //     let [entry] = entries;
-    //     if (entry.isIntersecting) containerRef.current.play();
-    //     setIsVisible(entry.isIntersecting);
-    //   },
-    //   { root: null, threshold: 0.75 }
-    // );
-    // if (containerRef.current) observer.observe(containerRef.current);
-    // if (isVisible) observer.unobserve(containerRef.current);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let [entry] = entries;
+        if (entry.isIntersecting) setPlay(true);
+        setIsVisible(entry.isIntersecting);
+      },
+      { root: null, threshold: 0.75 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    if (isVisible) observer.unobserve(containerRef.current);
   }, []);
 
   return (
-    <></>
-    // <video
-    //   className=" h-[80vh] lg:h-[90vh] xl:h-[750px] top-0 left-0 w-full object-contain "
-    //   type={"video/mp4"}
-    //   loop
-    //   muted
-    //   ref={containerRef}
-    // >
-    //   <source src="https://res.cloudinary.com/dtwhf1fv8/video/upload/v1679322290/dating.mp4" />
-    // </video>
+    <>
+      <main
+        ref={containerRef}
+        className="lg:max-w-[1000px] mx-auto lg:h-[900px] flex items-center"
+      >
+        <IKContext urlEndpoint="https://ik.imagekit.io/hv3uwn6tn/">
+          <IKVideo
+            path={"/cube_dating.m4v"}
+            // transformation={[{ height: 200, width: 200, q: 50 }]}
+            autoPlay={play}
+            loop
+          />
+        </IKContext>
+      </main>
+    </>
   );
 };
 

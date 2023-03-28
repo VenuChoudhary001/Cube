@@ -28,12 +28,12 @@ const Footer = () => {
             >
               Mission
             </Link>
-            <Link
+            {/* <Link
               href={"/press"}
               className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "
             >
               Press
-            </Link>
+            </Link> */}
             <Link
               href={"/careers"}
               className="text-white/70 cursor-pointer   text-[15px] font-primary300 md:text-base "

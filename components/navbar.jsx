@@ -52,7 +52,7 @@ const Navbar = () => {
             Careers
             <div className=" w-[50%]"></div>
           </Link>
-          <Link
+          {/* <Link
             href="/press"
             className={`block flex items-start font-primary300 justify-center flex-col ${
               router.pathname == "/press" && "anim_active"
@@ -60,7 +60,7 @@ const Navbar = () => {
           >
             Press
             <div className=" w-[50%]"></div>
-          </Link>
+          </Link> */}
         </div>
         <div
           className={`absolute left-[48%] font-primary500 text-4xl ${
@@ -175,7 +175,7 @@ export const Drawer = ({ setShow, active }) => {
             <div className="h-[1px] w-[90%]"></div>
           </Link>
 
-          <Link
+          {/* <Link
             href={"/press"}
             className={`  flex flex-col ${
               active == "/press"
@@ -185,7 +185,7 @@ export const Drawer = ({ setShow, active }) => {
           >
             Press
             <div className="h-[1px] w-[90%]"></div>
-          </Link>
+          </Link> */}
           <Link
             href={"/careers"}
             className={`  flex flex-col ${

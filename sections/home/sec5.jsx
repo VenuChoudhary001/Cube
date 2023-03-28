@@ -111,10 +111,10 @@ const Sec5 = () => {
     <>
       <section
         ref={containerRef}
-        className="bg-light-50 overflow-x-hidden pt-12 md:py-0 my-[150px] md:my-0"
+        className="bg-light-50 overflow-x-hidden pt-12 lg:py-0 my-[150px] md:my-0"
       >
-        <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[755px]  gap-8 place-items-center">
-          <article className=" hidden md:flex ml-[2vw]  flex-col gap-6">
+        <section className="container mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[755px]  gap-8 place-items-center">
+          <article className=" hidden lg:flex ml-[2vw]  flex-col gap-6">
             <main className="text-5xl font-primary400">Seize the moment</main>
             <main className="text-xl font-primary200 text-dark-400 max-w-[600px]">
               Strike while the ice is cold: our 24-hour rule for meaningful
@@ -168,7 +168,7 @@ const Sec5 = () => {
               />
             </main>
           </article>
-          <article className=" flex items-center text-black text-center px-6 md:hidden ml-[2vw] flex-col gap-5 my-16">
+          <article className=" flex items-center text-black text-center px-6 lg:hidden ml-[2vw] flex-col gap-5 my-16">
             <main className="text-4xl  font-primary400">Seize the moment</main>
             <main className="text-lg  font-primary200">
               Strike while the ice is cold: our 24-hour rule for meaningful

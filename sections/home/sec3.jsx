@@ -113,7 +113,7 @@ const Sec3 = () => {
         ref={containerRef}
         className="relative overflow-x-hidden overflow-y-hidden container min-h-[720px] md:min-h-[1024px] justify-center mx-auto flex flex-col gap-8"
       >
-        <div className="text-3xl lg:text-5xl text-dark-500 font-primary400 text-center">
+        <div className="text-3xl md:text-4xl lg:text-5xl text-dark-500 font-primary400 text-center">
           Spark new connections through videos
         </div>
         <div className="text-lg text-dark-200 font-primary200 text-center max-w-[95vw] md:max-w-[500px] mx-auto">
@@ -169,12 +169,12 @@ const Sec3 = () => {
           />
           <img
             src={"/home/sec3/1.png"}
-            className="absolute hidden object-contain w-[200px] lg:w-[328px] xl:w-[388px] xl:h-[581px] top-10  -left-[10%] sm:left-[4%] lg:left-[10%] xl:left-[6%] hidden   xl:left-[12%]"
+            className="absolute hidden object-contain w-[200px] md:w-[328px] xl:w-[388px] xl:h-[581px] top-10  -left-[10%] sm:left-[4%] lg:left-[10%] xl:left-[6%] hidden   xl:left-[12%]"
             ref={boyImg}
           />
           <img
             src={"/home/sec3/2.png"}
-            className="absolute hidden object-contain w-[200px] lg:w-[328px] xl:w-[388px] xl:h-[581px] top-10 hidden -right-[4%] sm:right-[3%] lg:right-[16%] xl:right-[12%]"
+            className="absolute hidden object-contain w-[200px] md:w-[328px] xl:w-[388px] xl:h-[581px] top-10 hidden -right-[4%] sm:right-[3%] lg:right-[16%] xl:right-[12%]"
             ref={girlImg}
           />
         </article>

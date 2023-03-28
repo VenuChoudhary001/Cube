@@ -40,8 +40,8 @@ const Accounts = () => {
       {
         opacity: 0,
         ease: Power3.easeOut,
-        duration: 1,
-        delay: 0.8,
+        duration: 0.3,
+        delay: 0.1,
         display: "block",
       },
       "start+=0"
@@ -117,19 +117,19 @@ const Accounts = () => {
   return (
     <>
       <section className="relative" ref={containerRef}>
-        <section className="md:hidden relative md:h-[800px] my-12 md:my-0 container overflow-hidden">
-          <main className="container mx-auto grid grid-cols-1 md:grid-cols-2 h-full place-items-center items-center">
+        <section className="lg:hidden relative md:h-[800px] my-12 md:my-0 container overflow-hidden">
+          <main className="container mx-auto grid grid-cols-1 lg:grid-cols-2 h-full place-items-center items-center">
             <div
               ref={textRef}
               className="flex  flex-col p-6 gap-3  max-w-[500px]"
             >
               <div className="hidden">
-                <div className="text-[32px] font-primary400 md:text-4xl text-dark-200">
+                <div className="text-[32px] md:text-4xl font-primary400 md:text-4xl text-dark-200">
                   Verified accounts only
                 </div>
               </div>
               <div className="hidden">
-                <div className="text-lg font-primary200 text-dark-10 md:text-base">
+                <div className="text-lg md:text-xl font-primary200 text-dark-10 md:text-base">
                   We prioritize trust and authenticity on our platform. All
                   accounts are verified, so you can be sure you're connecting
                   with genuine individuals who are looking for real connections.
@@ -157,7 +157,7 @@ const Accounts = () => {
         </section>
         <section
           ref={rootWeb}
-          className="container mx-auto grid grid-rows-2 gap-12  place-items-center justify-between  overflow-hidden md:block hidden h-[800px] "
+          className="container mx-auto grid grid-rows-2 gap-12  place-items-center justify-between  overflow-hidden lg:block hidden h-[800px] "
         >
           <Image
             src="/home/6.png"
@@ -172,7 +172,7 @@ const Accounts = () => {
               ref={webImg}
               src="/home/5.png"
               alt=""
-              className="block  w-[280px] h-[320px] mt-28 object-contain md:w-[360px] mr-[11vw] md:h-[412px] opacity-"
+              className="block  w-[280px] h-[320px] mt-28 object-contain md:w-[360px] mr-[11vw] md:h-[412px] 3xl:mr-[6vw] 5xl:mr-[1vw] opacity-"
             />
           </main>
           <main
