@@ -24,7 +24,7 @@ const VideoPlayer = () => {
         className="lg:max-w-[1000px] mx-auto lg:h-[900px] flex items-center"
       >
         <IKContext urlEndpoint="https://ik.imagekit.io/hv3uwn6tn/">
-          <IKVideo path={"/cube_dating.m4v"} autoPlay={play} loop />
+          <IKVideo muted path={"/cube_dating.m4v"} autoPlay={play} loop />
         </IKContext>
       </main>
     </>
