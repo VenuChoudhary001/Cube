@@ -26,6 +26,7 @@ const VideoPlayer = () => {
       >
         <video
           autoPlay={play}
+          muted
           loop
           preload="metadata"
           className="h-[700px] object-cover"
