@@ -43,7 +43,7 @@ const VideoJS = (props) => {
 
   return (
     <>
-      <div data-vjs-player>
+      <div data-vjs-player className="h-[600px w-full">
         <div ref={videoRef} />
       </div>
     </>

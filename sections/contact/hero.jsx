@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef } from "react";
 import "react-phone-input-2/lib/style.css";
 
@@ -82,9 +83,12 @@ const Hero = () => {
           </div>
           <span className="block text-black/70">
             You agree to our friendly{" "}
-            <span className="underline font-semibold cursor-pointer">
+            <Link
+              href={"/privacypolicy"}
+              className="underline font-semibold cursor-pointer"
+            >
               privacy policy.
-            </span>
+            </Link>
           </span>
         </main>
         <button className="p-3 bg-black/90 w-full rounded-full text-white h-12">
@@ -108,11 +112,14 @@ const Hero = () => {
                 placeholder="Enter your email"
                 className="outline-none rounded-full p-3 md:w-[380px]  bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
               />
-              <span className="block text-light-200 text-sm">
+              <span className="block text-dark-600/70 text-sm">
                 We care about your data in our
-                <span className="underline font-semibold cursor-pointer">
+                <Link
+                  href={"/privacypolicy"}
+                  className="underline font-semibold cursor-pointer"
+                >
                   &nbsp;privacy policy.
-                </span>
+                </Link>
               </span>
             </div>
 

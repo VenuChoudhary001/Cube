@@ -1,6 +1,6 @@
 import React from "react";
 // import VideoJS from "../../components/videoJS";
-import VideoPlayer from "../../components/videoPlayer";
+// import VideoPlayer from "../../components/videoPlayer";
 
 const Sec2 = () => {
   const playerRef = React.useRef(null);
@@ -51,7 +51,7 @@ const Sec2 = () => {
         </main>
       </section>
       <div className="relative bg-dark-600 w-full flex items-center justify-center overflow-hidden  ">
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
         {/* <VideoJS options={videoJsOptions} onReady={handlePlayerReady} /> */}
       </div>
     </>

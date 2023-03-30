@@ -23,7 +23,7 @@ const Landing = () => {
         <main className="grid grid-cols-1 place-items-center mt-10 container mx-auto lg:grid-cols-2">
           <main className="flex flex-col items-center text-center md:text-left md:items-start px-6 md:px-0 font-primary400 gap-6 lg:gap-8">
             <div className="text-3xl  lg:text-4xl xl:text-5xl">
-              Let’s build the future of real connections together
+              Let&apos;s build the future of real connections together
             </div>
             <Link
               href={"/contact"}
@@ -46,7 +46,7 @@ const Landing = () => {
         <div className="text-4xl flex flex-col mb-8 items-center text-dark-100 font-primary400">
           Get in touch
           <span className="block text-lg text-dark-700 font-primary200  text-center">
-            We’d love to hear from you. Please fill out this form.
+            We&apos;d love to hear from you. Please fill out this form.
           </span>
         </div>
         <main className="flex gap-2 flex-col w-full">
@@ -93,9 +93,12 @@ const Landing = () => {
           </div>
           <span className="block text-black/70">
             You agree to our friendly{" "}
-            <span className="underline font-semibold cursor-pointer">
+            <Link
+              href={"/privacypolicy"}
+              className="underline font-semibold cursor-pointer"
+            >
               privacy policy.
-            </span>
+            </Link>
           </span>
         </main>
         <Link

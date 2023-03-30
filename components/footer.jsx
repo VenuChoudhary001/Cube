@@ -53,12 +53,12 @@ const Footer = () => {
             <div className="text-light-400 font-primary400 text-base">
               Legal
             </div>
-            <div className="text-white/70 cursor-pointer  font-primary300 text-[15px] md:text-base ">
+            <Link
+              href={"/communityguidelines"}
+              className="text-white/70 cursor-pointer  font-primary300 text-[15px] md:text-base "
+            >
               Community Guidelines
-            </div>
-            <div className="text-white/70 cursor-pointer font-primary300 text-[15px] md:text-base  ">
-              Terms & Conditions
-            </div>
+            </Link>
             <Link
               href={"/privacypolicy"}
               className="text-white/70 cursor-pointer  font-primary300 text-[15px] md:text-base "

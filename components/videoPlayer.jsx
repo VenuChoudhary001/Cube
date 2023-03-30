@@ -30,7 +30,7 @@ const VideoPlayer = () => {
           loop
           playsInline
           preload="metadata"
-          className="h-[700px] object-cover"
+          className="h-[800px] object-cover"
         >
           <source
             src="https://ik.imagekit.io/hv3uwn6tn/cube_dating.m4v"

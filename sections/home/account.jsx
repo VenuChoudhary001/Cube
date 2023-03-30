@@ -160,7 +160,7 @@ const Accounts = () => {
           className="container mx-auto grid grid-rows-2 gap-12  place-items-center justify-between  overflow-hidden lg:block hidden h-[800px] "
         >
           <Image
-            src="/home/6.png"
+            src="/home/test.png"
             alt=""
             width={478}
             height={533}
