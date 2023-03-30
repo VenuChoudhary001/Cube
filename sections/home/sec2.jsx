@@ -50,7 +50,7 @@ const Sec2 = () => {
           deeper level to form meaningful relationships.
         </main>
       </section>
-      <div className="relative bg-dark-700 w-full flex items-center justify-center overflow-hidden  ">
+      <div className="relative bg-dark-600 w-full flex items-center justify-center overflow-hidden  ">
         <VideoPlayer />
         {/* <VideoJS options={videoJsOptions} onReady={handlePlayerReady} /> */}
       </div>
