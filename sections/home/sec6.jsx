@@ -20,7 +20,7 @@ const Sec6 = () => {
         if (entry.isIntersecting) animate();
         setIsVisible(entry.isIntersecting);
       },
-      { root: null, threshold: 0.5 }
+      { root: null, threshold: 0.1 }
     );
     if (containerRef.current) observer.observe(containerRef.current);
     if (isVisible) observer.unobserve(containerRef.current);
