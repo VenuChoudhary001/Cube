@@ -25,9 +25,10 @@ const VideoPlayer = () => {
         className="lg:max-w-[1000px] mx-auto lg:h-[900px] flex items-center"
       >
         <video
-          autoPlay={play}
+          autoPlay
           muted
           loop
+          playsInline
           preload="metadata"
           className="h-[700px] object-cover"
         >
