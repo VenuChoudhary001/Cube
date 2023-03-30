@@ -16,7 +16,7 @@ const Hero = () => {
         />
         <main className="flex md:px-6 flex-col max-w-[350px] mt-4 md:mt-0 md:max-w-[650px] mx-auto items-center md:items-start justify-center md:justify-start text-center md:text-left gap-3">
           <div className="text-lg md:text-base font-primary300">Contact us</div>
-          <div className="text-4xl md:text-5xl md:mb-2 text-dark-100 font-bold">
+          <div className="text-4xl md:text-4xl xl:text-5xl md:mb-2 text-dark-100 font-bold">
             We'd love to hear from you
           </div>
           <span className="block text-lg md:text-xl text-black/90">
@@ -92,7 +92,7 @@ const Hero = () => {
         </button>
       </section>
       <section className="container  mx-auto p-6 mb-12">
-        <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[212px]   gap-6">
+        <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[242px]   gap-6">
           <main className="flex flex-col gap-4">
             <div className="text-dark-300 max-w-[280px]  md:max-w-[600px] text-3xl font-primary400">
               Join the Cube community today

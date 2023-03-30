@@ -73,3 +73,8 @@ body {
     background: url("../public/home/1_mob.png") no-repeat center/cover;
   }
 } */
+
+video {
+  height: 500px;
+  object-fit: contain;
+}

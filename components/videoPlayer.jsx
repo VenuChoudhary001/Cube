@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
-import { IKVideo, IKContext } from "imagekitio-react";
+// import { IKVideo, IKContext } from "imagekitio-react";
+
 const VideoPlayer = () => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
@@ -23,9 +24,17 @@ const VideoPlayer = () => {
         ref={containerRef}
         className="lg:max-w-[1000px] mx-auto lg:h-[900px] flex items-center"
       >
-        <IKContext urlEndpoint="https://ik.imagekit.io/hv3uwn6tn/">
-          <IKVideo muted path={"/cube_dating.m4v"} autoPlay={play} loop />
-        </IKContext>
+        <video
+          autoPlay={play}
+          loop
+          preload="metadata"
+          className="h-[700px] object-cover"
+        >
+          <source
+            src="https://ik.imagekit.io/hv3uwn6tn/cube_dating.m4v"
+            type="video/mp4"
+          />
+        </video>
       </main>
     </>
   );

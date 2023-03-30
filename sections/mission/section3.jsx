@@ -35,11 +35,11 @@ const Section3 = () => {
                 work.
               </span>
               <Link
-                href={"/joinus"}
+                href={"/careers"}
                 className="bg-white font-primary400 mt-4 md:mt-0 w-[133px] md:w-[163px] text-black flex text-sm md:text-base items-center justify-center rounded-full h-10 md:h-12"
               >
                 {" "}
-                Join Us
+                Join us
               </Link>
             </article>
             <Image
@@ -57,9 +57,14 @@ const Section3 = () => {
         <div className="text-xl font-primary300 md:text-4xl ">
           Still have questions?
         </div>
-        <button className="bg-black text-sm md:text-base text-white w-[113px] h-10 md:w-[156px] md:h-[59px] rounded-full">
-          Get in touch
-        </button>
+        <Link
+          href={"/contact"}
+          className="outline-none flex flex-col items-center justfiy-center font-primary300  bg-black text-sm md:text-base text-white w-[113px] h-10 md:w-[156px] md:h-[59px] rounded-full"
+        >
+          <span className="block w-full h-full flex items-center justify-center">
+            Get in touch
+          </span>
+        </Link>
       </section>
     </>
   );
