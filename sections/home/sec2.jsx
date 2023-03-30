@@ -15,7 +15,7 @@ const Sec2 = () => {
         </main>
       </section>
       <div className="relative bg-dark-600 w-full  overflow-hidden  ">
-        {/* <VideoPlayer /> */}
+        <VideoPlayer />
         {/* <VideoJS options={videoJsOptions} onReady={handlePlayerReady} /> */}
       </div>
     </>
