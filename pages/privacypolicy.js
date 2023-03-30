@@ -608,7 +608,7 @@ const Privacypolicy = () => {
             unauthorized access, disclosure, alteration, or destruction.
           </div>
           <div className="font-primary400 text-[17px] md:text-lg">
-            Children's Privacy
+            Children&#39;s Privacy
           </div>
           <div className="font-primary300 text-[15px] md:text-lg">
             The Services are not intended for children under the age of 18. We
@@ -654,7 +654,7 @@ const Privacypolicy = () => {
             practices, please contact us at{" "}
             <span className="underline font-primary400`">
               hello@cubedating.co
-            </span>{" "}
+            </span>
             .
           </div>
         </main>
