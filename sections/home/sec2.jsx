@@ -1,6 +1,6 @@
 import React from "react";
-import VideoJS from "../../components/videoJS";
-// import VideoPlayer from "../../components/videoPlayer";
+// import VideoJS from "../../components/videoJS";
+import VideoPlayer from "../../components/videoPlayer";
 
 const Sec2 = () => {
   const playerRef = React.useRef(null);
