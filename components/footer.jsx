@@ -13,7 +13,7 @@ const Footer = () => {
       <main className="bg-dark-200 flex font-primary200 flex-col justify-center gap-16 items-center h-[578px] md:h-[430px]">
         <div className="container mx-auto  p-6 grid grid-cols-2 gap-8 md:gap-12 md:grid-cols-4   items-start">
           <Image
-            alt=""
+            alt="Cube"
             width={112}
             height={40}
             className="col-span-2 md:col-span-1 cursor-pointer"
@@ -71,10 +71,30 @@ const Footer = () => {
               Social Media
             </div>
             <div className="text-white/70 cursor-pointer flex gap-4">
-              <Image alt="" src={"/icons/insta.svg"} width={24} height={24} />
-              <Image alt="" src={"/icons/fb.svg"} width={24} height={24} />
-              <Image alt="" src={"/icons/twitter.svg"} width={24} height={24} />
-              <Image alt="" src={"/icons/titok.svg"} width={24} height={24} />
+              <Image
+                alt="cube_social_media"
+                src={"/icons/insta.svg"}
+                width={24}
+                height={24}
+              />
+              <Image
+                alt="cube_social_media"
+                src={"/icons/fb.svg"}
+                width={24}
+                height={24}
+              />
+              <Image
+                alt="cube_social_media"
+                src={"/icons/twitter.svg"}
+                width={24}
+                height={24}
+              />
+              <Image
+                alt="cube_social_media"
+                src={"/icons/titok.svg"}
+                width={24}
+                height={24}
+              />
             </div>
             <div className="text-light-400 font-primary400 hidden md:block md:text-base mt-2">
               Contact

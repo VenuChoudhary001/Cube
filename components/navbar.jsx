@@ -81,7 +81,7 @@ const Navbar = () => {
       <main className=" md:hidden relative container px-6 h-[80px] flex items-center justify-between">
         {!dark ? (
           <Image
-            alt=""
+            alt="cube menu"
             src={"/icons/menu.svg"}
             width={22}
             height={22}
@@ -139,7 +139,12 @@ export const Drawer = ({ setShow, active }) => {
             }}
             className="w-[36px] flex items-center justify-center rounded-full bg-white h-[36px]"
           >
-            <Image alt="" src={"/icons/close.svg"} width={14} height={14} />
+            <Image
+              alt="cube_menu"
+              src={"/icons/close.svg"}
+              width={14}
+              height={14}
+            />
           </div>
         </div>
         <div className="h-[400px] flex flex-col gap-4 items-center justify-center">

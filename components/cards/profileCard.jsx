@@ -20,6 +20,7 @@ export const ProfileCard = () => {
               <span className="block text-xl font-primary300">32</span>
               <span className="block">
                 <Image
+                  alt=""
                   src={"/card/check.png"}
                   width={16}
                   height={16}
@@ -34,10 +35,20 @@ export const ProfileCard = () => {
           </main>
           <main className="flex flex-col gap-4">
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <Image src={"/card/like.svg"} width={16} height={16} />
+              <Image
+                alt="Cube dating"
+                src={"/card/like.svg"}
+                width={16}
+                height={16}
+              />
             </div>
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-              <Image src={"/card/share.svg"} width={16} height={16} />
+              <Image
+                alt="cube dating"
+                src={"/card/share.svg"}
+                width={16}
+                height={16}
+              />
             </div>
           </main>
         </main>
