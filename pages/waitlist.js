@@ -74,7 +74,7 @@ const Waitlist = () => {
             layout="fill"
             className="-z-10 object-cover rounded-l-[50px]"
           />
-          <main className="text-5xl max-w-[600px] font-primary400 text-white ">
+          <main className="text-[45px] leading-[50px] max-w-[600px] font-primary400 text-white ">
             “Break the ice and make a real connection on Cube”
           </main>
         </main>

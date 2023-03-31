@@ -12,7 +12,7 @@ const Privacypolicy = () => {
           Privacy Policy
         </div>
         <main className="flex flex-col max-w-[90vw] md:max-w-[1000px] mx-auto items-start justify-start gap-4 lg:gap-8">
-          {/* <div className="font-primary300 text-2xl">Terms of Use Agreement</div> */}
+          {/* <div className="font-primary300 text-2lg">Terms of Use Agreement</div> */}
           <div className="flex flex-col gap-1">
             <span className="text-dark-300 text-xl font-primary400 ">
               Effective date : <span className=" font-bold">3/4/2023</span>
@@ -197,7 +197,7 @@ const Privacypolicy = () => {
             In addition to the information you may provide us directly, we
             receive information about you from others, including:
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary500">
             <li>Users</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -205,7 +205,7 @@ const Privacypolicy = () => {
             for instance as they interact with you or if they submit a report
             involving you.
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary500">
             <li>Social Media</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -216,7 +216,7 @@ const Privacypolicy = () => {
             information such as photos from one of your social media accounts
             (e.g., Facebook or Instagram).
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary500">
             <li>Other Partners</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -238,7 +238,7 @@ const Privacypolicy = () => {
             features you&apos;ve used, how you&apos;ve used them and the devices
             you use to access our services. See below for more details.
           </div>
-          <ul className=" ml-5 list-disc md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc md:text-lg font-primary500">
             <li>Usage Information</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -250,7 +250,7 @@ const Privacypolicy = () => {
             interact with, and when you matched and exchanged messages with
             them).
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary500">
             <li>Device Information</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -263,7 +263,7 @@ const Privacypolicy = () => {
             associated with cookies or other technologies that may uniquely
             identify a device or browser.
           </div>
-          <ul className=" ml-5 list-disc text-[17px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[17px] md:text-lg font-primary500">
             <li>Information collected by cookies and similar technologies</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -283,7 +283,7 @@ const Privacypolicy = () => {
             For this reason, many businesses, including Cube, do not currently
             respond to DNT signals.
           </div>
-          <ul className=" ml-5 list-disc text-[17px] md:text-xl font-primary500">
+          <ul className=" ml-5 list-disc text-[17px] md:text-lg font-primary500">
             <li>Other Information with your Consent</li>
           </ul>
           <div className="font-primary300 text-[15px] md:text-lg">
@@ -335,7 +335,7 @@ const Privacypolicy = () => {
               our services to you
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>Create and manage your account</li>
             <li>
               Provide you with customer support and respond to your requests
@@ -352,7 +352,7 @@ const Privacypolicy = () => {
               B.&nbsp;&nbsp;&nbsp;&nbsp; To help you connect with other users
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>
               Recommend you to other users and recommend other users to you
             </li>
@@ -365,7 +365,7 @@ const Privacypolicy = () => {
               advertising and marketing campaigns
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>
               Perform and measure the effectiveness of advertising campaigns on
               our services and marketing our services off our platform
@@ -381,7 +381,7 @@ const Privacypolicy = () => {
               ones
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>Administer focus groups, market studies and surveys</li>
             <li>
               Review interactions with customer care teams to improve our
@@ -405,7 +405,7 @@ const Privacypolicy = () => {
               other illegal or unauthorized activities
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>
               Find and address ongoing, suspected or alleged violations of our
               Terms of Use, nnotably through the review of reports and
@@ -433,7 +433,7 @@ const Privacypolicy = () => {
               F.&nbsp;&nbsp;&nbsp;&nbsp; To ensure legal compliance
             </span>
           </div>
-          <ul className=" ml-5 list-disc text-[15px] md:text-xl font-primary300">
+          <ul className=" ml-5 list-disc text-[15px] md:text-lg font-primary300">
             <li>Comply with legal requirements</li>
             <li>Assist law enforcement</li>
             <li>
