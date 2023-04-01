@@ -33,7 +33,6 @@ const VideoPlayer = ({ playerRef }) => {
           autoPlay
           ref={playerRef}
           muted
-          controls
           loop
           playsInline
           preload="metadata"
