@@ -16,7 +16,7 @@ const VideoPlayer = ({ playerRef }) => {
         }
         setIsVisible(entry.isIntersecting);
       },
-      { root: null, threshold: 0.75 }
+      { root: null, threshold: 0.15 }
     );
     if (containerRef.current) observer.observe(containerRef.current);
     if (isVisible) observer.unobserve(containerRef.current);
