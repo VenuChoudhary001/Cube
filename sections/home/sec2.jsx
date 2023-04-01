@@ -2,43 +2,7 @@ import React from "react";
 // import VideoJS from "../../components/videoJS";
 import VideoPlayer from "../../components/videoPlayer";
 
-const Sec2 = () => {
-  const playerRef = React.useRef(null);
-
-  const videoJsOptions = {
-    autoplay: true,
-    controls: false,
-    // width: "100vw",
-    // height: "800px",
-    // fill: true,
-    width: "100vw",
-    height: 420,
-    loop: true,
-    // fluid: true,
-    // aspectRatio: "9:16",
-    muted: true,
-    // responsive: true,
-    sources: [
-      {
-        src: "/cube_dating.m4v",
-        type: "video/mp4",
-      },
-    ],
-  };
-
-  const handlePlayerReady = (player) => {
-    playerRef.current = player;
-
-    // You can handle player events here, for example:
-    player.on("waiting", () => {
-      videojs.log("player is waiting");
-    });
-
-    player.on("dispose", () => {
-      videojs.log("player will dispose");
-    });
-  };
-
+const Sec2 = ({ playerRef }) => {
   return (
     <>
       <section className="container flex items-center justify-center mx-auto flex-col gap-4 md:gap-8 min-h-[300px]">
@@ -51,7 +15,7 @@ const Sec2 = () => {
         </main>
       </section>
       <div className="relative bg-dark-600 w-full flex items-center justify-center overflow-hidden  ">
-        <VideoPlayer />
+        <VideoPlayer playerRef={playerRef} />
         {/* <VideoJS options={videoJsOptions} onReady={handlePlayerReady} /> */}
       </div>
     </>

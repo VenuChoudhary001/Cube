@@ -1,11 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 // import { IKVideo, IKContext } from "imagekitio-react";
 
-const VideoPlayer = () => {
+const VideoPlayer = ({ playerRef }) => {
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
   const [play, setPlay] = useState(false);
   useEffect(() => {
+    if (containerRef.current) {
+      if (playerRef.current) {
+        playerRef.current.play();
+      }
+    }
     const observer = new IntersectionObserver(
       (entries) => {
         let [entry] = entries;
@@ -26,7 +31,9 @@ const VideoPlayer = () => {
       >
         <video
           autoPlay
+          ref={playerRef}
           muted
+          controls
           loop
           playsInline
           preload="metadata"
