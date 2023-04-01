@@ -6,15 +6,14 @@ const VideoPlayer = ({ playerRef }) => {
   const containerRef = useRef(null);
   const [play, setPlay] = useState(false);
   useEffect(() => {
-    if (containerRef.current) {
-      if (playerRef.current) {
-        playerRef.current.play();
-      }
-    }
     const observer = new IntersectionObserver(
       (entries) => {
         let [entry] = entries;
-        if (entry.isIntersecting) setPlay(true);
+        if (entry.isIntersecting) {
+          if (playerRef.current) {
+            playerRef.current.play();
+          }
+        }
         setIsVisible(entry.isIntersecting);
       },
       { root: null, threshold: 0.75 }
@@ -30,7 +29,6 @@ const VideoPlayer = ({ playerRef }) => {
         className="lg:max-w-[1000px] mx-auto lg:h-[900px] flex items-center"
       >
         <video
-          autoPlay
           ref={playerRef}
           muted
           loop
