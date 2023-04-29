@@ -1,14 +1,18 @@
 import React, { useState } from "react";
-import { validateEmail, validatePhone } from "../utils";
+import { postData, validateEmail, validatePhone } from "../utils";
 import Link from "next/link";
 const GetInTouchForm = () => {
   const [contact, setContact] = useState({});
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateEmail(contact.email) && validatePhone(contact.phone)) {
+    if (
+      validateEmail(contact.email) &&
+      validatePhone(contact.phone) &&
+      contact.is_checked
+    ) {
+      postData(contact);
+      console.log(contact);
     }
-    console.log(contact);
   };
   return (
     <>
@@ -21,9 +25,7 @@ const GetInTouchForm = () => {
           <input
             required
             type={"text"}
-            onChange={(e) =>
-              setContact({ ...contact, full_name: e.target.value })
-            }
+            onChange={(e) => setContact({ ...contact, name: e.target.value })}
             placeholder="Full name"
             className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
           />
