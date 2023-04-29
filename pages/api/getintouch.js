@@ -44,7 +44,7 @@ export default async function getInTouch(req, res) {
         ],
       },
     });
-    return res.status(200).json({ data: response.data });
+    return res.status(200).json({ status: response.status });
   } catch (error) {
     return res
       .status(500)

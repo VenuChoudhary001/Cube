@@ -1,21 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { postData, validateEmail, validatePhone } from "../utils";
 import Link from "next/link";
+import SuccessModal from "./successModal";
 const GetInTouchForm = () => {
+  const [success, setSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [contact, setContact] = useState({});
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (
       validateEmail(contact.email) &&
       validatePhone(contact.phone) &&
       contact.is_checked
     ) {
-      postData(contact);
-      console.log(contact);
+      setIsSubmitting(true);
+      let res = await postData(contact);
+      setIsSubmitting(false);
+      if (res.status == 200) {
+        setSuccess(true);
+      }
     }
   };
+
+  useEffect(() => {
+    if (success) {
+      document.body.style.overflowY = "hidden";
+    } else {
+    }
+  }, [success]);
+
   return (
     <>
+      {success && <SuccessModal />}
       <form
         onSubmit={(e) => handleSubmit(e)}
         className="w-full flex flex-col gap-6"
@@ -42,7 +58,7 @@ const GetInTouchForm = () => {
         </main>
         <main className="flex gap-1 flex-col w-full">
           <div className="text-sm font-bold ">Phone number</div>
-          <div className="relative flex gap-2 items-center border-[1px] px-3 border-light-100 text-black/70 rounded-lg">
+          <div className=" flex gap-2 items-center border-[1px] px-3 border-light-100 text-black/70 rounded-lg">
             <input
               required
               onChange={(e) =>
@@ -50,7 +66,7 @@ const GetInTouchForm = () => {
               }
               type={"text/number"}
               maxLength={10}
-              className="w-full text-base outline-none p-3"
+              className="w-full bg-transparent  text-base outline-none p-3"
               placeholder="XXXXXXXXX"
             />
           </div>
@@ -90,10 +106,14 @@ const GetInTouchForm = () => {
         </main>
         <button
           type="submit"
+          disabled={isSubmitting}
           onSubmit={(e) => handleSubmit(e)}
-          className="p-3 bg-black/90 w-full rounded-full text-white h-12"
+          className="p-3 bg-black/90 w-full flex gap-2 items-center justify-center rounded-full text-white h-12"
         >
-          Send message
+          Send message{" "}
+          {isSubmitting && (
+            <span className="w-6 h-6 p- rounded-full block border-t-2 border-l-2 animate-spin border-white rounded"></span>
+          )}
         </button>
       </form>
     </>
