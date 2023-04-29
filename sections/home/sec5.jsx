@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Sec5 = () => {
   const image1 = useRef(null);
   const image2 = useRef(null);
@@ -11,7 +12,7 @@ const Sec5 = () => {
   const containerRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   let t0 = gsap.timeline();
-
+  const router = useRouter();
   const animate = () => {
     // t0.from(
     //   image1.current,
@@ -122,7 +123,10 @@ const Sec5 = () => {
               arrow.
             </main>
             <div>
-              <button className="outline-none font-primary300 rounded-full w-[163px] h-[48px] bg-black text-white">
+              <button
+                onClick={() => router.push("/waitlist")}
+                className="outline-none font-primary300 rounded-full w-[163px] h-[48px] bg-black text-white"
+              >
                 Join Beta
               </button>
             </div>

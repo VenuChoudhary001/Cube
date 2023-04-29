@@ -1,6 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { validatePhone } from "../utils";
 const Waitlist = () => {
+  const [userInfo, setUserInfo] = useState({});
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validatePhone(userInfo.phone)) {
+    }
+    console.log(userInfo);
+  };
   return (
     <>
       <section className="grid gap-2 grid-cols-1 md:grid-cols-2">
@@ -22,11 +31,18 @@ const Waitlist = () => {
               We are still fine tuning the product and would love your help.
               Join 12,045+ Cube babes on the waitlist.
             </div>
-            <div className="flex flex-col gap-4 mt-4">
+            <form
+              onSubmit={(e) => handleSubmit(e)}
+              className="flex flex-col gap-4 mt-4"
+            >
               <main className="flex gap-2 flex-col w-full">
                 <div className="text-sm font-bold ">Full Name</div>
                 <input
                   type={"text"}
+                  required
+                  onChange={(e) =>
+                    setUserInfo({ ...userInfo, full_name: e.target.value })
+                  }
                   placeholder="Full name"
                   className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
                 />
@@ -35,6 +51,10 @@ const Waitlist = () => {
                 <div className="text-sm font-bold ">Phone</div>
                 <input
                   type={"text"}
+                  required
+                  onChange={(e) =>
+                    setUserInfo({ ...userInfo, phone: e.target.value })
+                  }
                   placeholder="Phone"
                   className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
                 />
@@ -42,6 +62,10 @@ const Waitlist = () => {
               <main className="flex items-center gap-2 w-full">
                 <div className="flex relative">
                   <input
+                    required
+                    onChange={(e) =>
+                      setUserInfo({ ...userInfo, is_checked: e.target.checked })
+                    }
                     type={"checkbox"}
                     className="appearance-none w-[15px] h-[10px] checked:bg-black outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
                   />
@@ -56,7 +80,7 @@ const Waitlist = () => {
               <button className="p-3  bg-black w-full rounded-full text-white h-12">
                 Join Beta
               </button>
-            </div>
+            </form>
           </div>
           <div>
             <Image

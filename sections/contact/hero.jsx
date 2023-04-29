@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "react-phone-input-2/lib/style.css";
+import GetInTouchForm from "../../components/getInTouchForm";
+import { validateEmail, validatePhone } from "../../utils";
 
 const Hero = () => {
   const selectRef = useRef(null);
@@ -39,61 +41,7 @@ const Hero = () => {
         <span className="block text-lg text-black/90 text-center">
           We’d love to hear from you. Please fill out this form.
         </span>
-        <main className="flex gap-2 flex-col w-full">
-          <div className="text-sm font-bold ">Full Name</div>
-          <input
-            type={"text"}
-            placeholder="Full name"
-            className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
-          />
-        </main>
-        <main className="flex gap-2 flex-col w-full">
-          <div className="text-sm font-bold ">Email</div>
-          <input
-            type={"email"}
-            placeholder="you@company.com"
-            className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
-          />
-        </main>
-        <main className="flex gap-1 flex-col w-full">
-          <div className="text-sm font-bold ">Phone number</div>
-          <div className="relative flex gap-2 items-center border-[1px] px-3 border-light-100 text-black/70 rounded-lg">
-            <input
-              type={"text/number"}
-              maxLength={10}
-              className="w-full text-base outline-none p-3"
-              placeholder="XXXXXXXXX"
-            />
-          </div>
-        </main>
-        <main className="flex gap-2 flex-col w-full">
-          <div className="text-sm font-bold ">Message</div>
-          <textarea
-            rows={5}
-            placeholder="Leave us a message"
-            className="outline-none rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
-          />
-        </main>
-        <main className="flex items-center gap-2 w-full">
-          <div className="flex relative">
-            <input
-              type={"checkbox"}
-              className="appearance-none w-[15px] h-[10px] checked:bg-black outline-none  rounded-lg p-3 bg-white border-[1px] border-light-100 text-black/70 placeholder:text-black/70"
-            />
-          </div>
-          <span className="block text-black/70">
-            You agree to our friendly{" "}
-            <Link
-              href={"/privacypolicy"}
-              className="underline font-semibold cursor-pointer"
-            >
-              privacy policy.
-            </Link>
-          </span>
-        </main>
-        <button className="p-3 bg-black/90 w-full rounded-full text-white h-12">
-          Send message
-        </button>
+        <GetInTouchForm />
       </section>
       <section className="container  mx-auto p-6 mb-12">
         <main className="bg-light-300  grid grid-cols-1 xl:grid-cols-2 md:gap-6 rounded-[10px] py-8 px-4 place-items-center md:h-[242px]   gap-6">
