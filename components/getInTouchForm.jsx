@@ -84,7 +84,7 @@ const GetInTouchForm = () => {
           />
         </main>
         <main className="flex items-center gap-2 w-full">
-          <div className="flex relative">
+          <div className="flex">
             <input
               required
               onChange={(e) =>
